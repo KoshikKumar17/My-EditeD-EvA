@@ -105,7 +105,8 @@ async def gen_link_batch(bot, message):
                     "caption": caption,
                     "title": getattr(file, "file_name", ""),
                     "size": file.file_size,
-                    "person_id": message.from_user.id,
+                    "By_User_id": message.from_user.id,
+                    "By_User_FirstName": message.from_user.first_name,
                     "protect": cmd.lower().strip() == "/pbatch",
                 }
 
