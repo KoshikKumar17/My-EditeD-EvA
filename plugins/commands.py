@@ -245,7 +245,7 @@ async def start(client, message):
         )
                     
 @Client.on_message(filters.private & filters.command(["help"]))
-async def start(bot, update):
+async def help(bot, update):
     await update.reply_text(
         text=HELP1_TEXT,
         disable_web_page_preview=True,
