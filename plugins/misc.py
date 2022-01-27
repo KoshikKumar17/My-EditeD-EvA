@@ -81,7 +81,7 @@ async def who_is(client, message):
     dc_id = from_user.dc_id or "[User Doesn't Have A Valid DP]"
     message_out_str += f"<b>➲Data Centre😋:</b> <code>{dc_id}</code>\n"
     message_out_str += f"<b>➲User Name😝:</b> @{username}\n"
-    message_out_str += f"<b>➲User Permanent 𝖫𝗂𝗇𝗄🤪:</b> {message.from_user.mention} \n"
+    message_out_str += f"<b>➲User Permanent 𝖫𝗂𝗇𝗄🤪:<a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\n"
     if message.chat.type in (("supergroup", "channel")):
         try:
             chat_member_p = await message.chat.get_member(from_user.id)
