@@ -244,6 +244,13 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         )
                     
+@Client.on_message(filters.private & filters.command(["help"]))
+async def start(bot, update):
+    await update.reply_text(
+        text=HELP1_TEXT,
+        disable_web_page_preview=True,
+    )
+
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
