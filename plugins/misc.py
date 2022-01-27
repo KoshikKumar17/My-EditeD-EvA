@@ -81,7 +81,7 @@ async def who_is(client, message):
     dc_id = from_user.dc_id or "[User Doesn't Have A Valid DP]"
     message_out_str += f"<b>➲Data Centre😋:</b> <code>{dc_id}</code>\n"
 #test🤪
-    message_out_str += f"<b>✔ Is Verified By TELEGRAM:</b> <code> {me.is_verified} if me.is_verified else "" \n"
+    message_out_str += f"<b>✔ Is Verified By TELEGRAM:</b> <code> {me.is_verified} if me.is_verified else ""
     message_out_str += f"<b>➲User Name😝:</b> @{username}\n"
     message_out_str += f"<b>➲User Permanent 𝖫𝗂𝗇𝗄🤪:</b> {message.from_user.mention} \n"
     if message.chat.type in (("supergroup", "channel")):
