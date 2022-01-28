@@ -22,6 +22,19 @@ Commands list :- <a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-3
  Commands👇🏻             Changelogs👇🏻</b>"""
     ABOUTT_TEXT = """Hey,
 Click below Button👇🏻 to know about this bot."""
+    CHANGELOGS_TXT = """Hey.,🙂
+<b>Here is the Changelogs of the Latest Update</b>
+Date:- 28th January 2022 > 09:00AM IST 🇮🇳
+Changelogs:-
+</i> --> Added New command /about .
+--> Added New command /help .
+--> Bot Updated .
+--> Some Bugs Fixed .
+--> Answer all callback queries in new UI 😇.</i>
+Thanks❤️,
+@KoshikKumar17"""
+    COMMANDS1_TXT = """𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂
+<a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'> 𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄 </a> ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ..."""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
