@@ -249,6 +249,7 @@ async def help(bot, update):
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('😊Help😊', callback_data='help'), InlineKeyboardButton('✨About✨', callback_data='about1')]])
     await update.reply_text(
         text=script.HELP1_TEXT,
+        reply_markup = reply_markup,
         disable_web_page_preview=True,
     )
 
