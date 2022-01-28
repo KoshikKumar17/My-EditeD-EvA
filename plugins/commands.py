@@ -246,8 +246,21 @@ async def start(client, message):
                     
 @Client.on_message(filters.private & filters.command(["help"]))
 async def help(bot, update):
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('😊Help😊', callback_data='help')]])
     await update.reply_text(
         text=script.HELP1_TEXT,
+        disable_web_page_preview=True,
+    )
+
+@Client.on_message(filters.private & filters.command(["about"]))
+async def about(bot, update):
+    buttons= [[
+          InlineKeyboardButton('✨Click Here(ABOUT)✨', callback_data='about1'),
+      ]]
+   reply_markup = InlineKeyboardMarkup(buttons)
+   await update.reply_text(
+        text=script.ABOUTT_TEXT,
+        reply_markup = reply_markup,
         disable_web_page_preview=True,
     )
 
