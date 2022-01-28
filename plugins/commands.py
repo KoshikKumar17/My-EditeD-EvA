@@ -244,11 +244,11 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         )
                     
-@Client.on_message(filters.private & filters.command(["help"]))
+@Client.on_message(filters.private & filters.command(["about"]))
 async def help(bot, update):
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('😊Help😊', callback_data='help'), InlineKeyboardButton('✨About✨', callback_data='about1')]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('✨ Click Here (About)✨', callback_data='about1')]])
     await update.reply_text(
-        text=script.HELP1_TEXT,
+        text=script.ABOUTT_TEXT,
         reply_markup = reply_markup,
         disable_web_page_preview=True,
     )
