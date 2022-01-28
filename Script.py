@@ -25,7 +25,6 @@ Date:- 28th January 2022 > 09:00AM IST 🇮🇳
 Changelogs:-</b>
 
 <i>--> Added New command /about .
---> Added New command /help .
 --> Bot Updated .
 --> Some Bugs Fixed .
 --> Answer all callback queries in new UI 😇.</i>
