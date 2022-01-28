@@ -419,6 +419,44 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
         await query.answer('🙂Kya Baat hai Sir😜🙃')
+#myextrastarts
+    elif query.data == "about1":
+        buttons= [[
+            InlineKeyboardButton('🙂Commands', callback_data='commands1'),
+            InlineKeyboardButton('😉ChangeLogs', callback_data='changelogs')
+              ],[
+            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+               ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.ABOUT1_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+        await query.answer('🙂Fetching Info About this Bot✨')
+    elif query.data == "changelogs":
+        buttons= [[
+            InlineKeyboardButton('⬅️ Back', callback_data='about1')
+            ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CHANGELOGS_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+        await query.answer('🙂Fetching Latest ChangeLOGS✨')
+    elif query.data == "commands1":
+        buttons= [[
+            InlineKeyboardButton('⬅️ Back', callback_data='about1')
+            ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.COMMANDS1_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+        await query.answer('🙂Fetching Commands List✨')
+
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
