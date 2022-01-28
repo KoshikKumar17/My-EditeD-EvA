@@ -255,7 +255,7 @@ async def help(bot, update):
 @Client.on_message(filters.private & filters.command(["about"]))
 async def about(bot, update):
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('🙂 Click Here(ABOUT)✨', callback_data='about1')]])
-   await update.reply_text(
+   await message.reply(
         text=script.ABOUTT_TEXT,
         reply_markup = reply_markup,
         disable_web_page_preview=True,
