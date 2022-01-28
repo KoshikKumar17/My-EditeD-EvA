@@ -26,11 +26,12 @@ Click below Button👇🏻 to know about this bot."""
 <b>Here is the Changelogs of the Latest Update</b>
 Date:- 28th January 2022 > 09:00AM IST 🇮🇳
 Changelogs:-
-</i> --> Added New command /about .
+</i>--> Added New command /about .
 --> Added New command /help .
 --> Bot Updated .
 --> Some Bugs Fixed .
 --> Answer all callback queries in new UI 😇.</i>
+
 Thanks❤️,
 @KoshikKumar17"""
     COMMANDS1_TXT = """𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂
