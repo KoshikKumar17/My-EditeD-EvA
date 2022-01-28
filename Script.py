@@ -1,8 +1,27 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙾 {},
 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
-    HELP1_TEXT = """It's a Test.
-Here is help."""
+    HELP1_TEXT = """Hey😝.
+Here is help. Click below Button to Get the Help
+Commands list :- <a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'> 𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄 </a>"""
+    ABOUT1_TXT = """<b>Hey😉,
+✯ 🙄𝙻𝙸𝙱𝚁𝙰𝚁𝚈: <a href='https://docs.pyrogram.org'> ᴘʏʀᴏɢʀᴀᴍ </a>
+
+✯ 😛𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: <a href='https://python.org'> ᴘʏᴛʜᴏɴ 𝟹.8.7 </a>
+
+✯ 😉𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: <a href='https://mongodb.com'> ᴍᴏɴɢᴏᴅʙ </a>
+
+✯ 😊𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: <a href='https://heroku.com'> 𝙷𝙴𝚁𝙾𝙺𝚄 </a>
+
+✯ 🙋‍♂️𝙱𝙾𝚃 FATHER: <a href='tg://user?id=1162032262'> @KoshikKumar17 </a>
+
+✯ 😝 Thanks to: <a href='https://t.me/SubinPS'> Subin P S </a> and @TeamEvaMaria
+
+✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.4 [ ʂƚαႦʅҽ ]
+
+ Commands👇🏻             Changelogs👇🏻</b>"""
+    ABOUTT_TEXT = """Hey,
+Click below Button👇🏻 to know about this bot."""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
