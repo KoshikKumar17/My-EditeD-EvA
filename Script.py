@@ -1,9 +1,6 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙾 {},
 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
-    HELP1_TEXT = """Hey😝.
-Here is help. Click below Button to Get the Help
-Commands list :- <a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'> 𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄 </a>"""
     ABOUT1_TXT = """<b>Hey😉,
 ✯ 🙄𝙻𝙸𝙱𝚁𝙰𝚁𝚈: <a href='https://docs.pyrogram.org'> ᴘʏʀᴏɢʀᴀᴍ </a>
 
@@ -21,20 +18,21 @@ Commands list :- <a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-3
 
  Commands👇🏻             Changelogs👇🏻</b>"""
     ABOUTT_TEXT = """Hey,
-Click below Button👇🏻 to know about this bot."""
+Click <b>below Button👇🏻<b> to know about this bot."""
     CHANGELOGS_TXT = """Hey.,🙂
-<b>Here is the Changelogs of the Latest Update</b>
+<b>Here is the Changelogs of the Latest Update
 Date:- 28th January 2022 > 09:00AM IST 🇮🇳
-Changelogs:-
-</i>--> Added New command /about .
+Changelogs:-</b>
+
+<i>--> Added New command /about .
 --> Added New command /help .
 --> Bot Updated .
 --> Some Bugs Fixed .
 --> Answer all callback queries in new UI 😇.</i>
 
-Thanks❤️,
-@KoshikKumar17"""
-    COMMANDS1_TXT = """𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂
+<b>Thanks❤️,
+@KoshikKumar17</b>"""
+    COMMANDS1_TXT = """<b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
 <a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'> 𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄 </a> ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ..."""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
