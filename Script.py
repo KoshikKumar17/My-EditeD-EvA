@@ -18,7 +18,8 @@ class script(object):
 
  Commands👇🏻             Changelogs👇🏻</b>"""
     ABOUTT_TEXT = """Hey,
-Click <b>below Button👇🏻<b> to know about this bot."""
+
+Click <b>below Button👇🏻</b> to know about this bot."""
     CHANGELOGS_TXT = """Hey.,🙂
 <b>Here is the Changelogs of the Latest Update
 Date:- 28th January 2022 > 09:00AM IST 🇮🇳
