@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from .list import list
 
-@Client.on_message(filters.command(["tr", "translate"]))
+@Client.on_message(filters.command(["tr"]))
 async def left(client,message):
 	if (message.reply_to_message):
 		try:
