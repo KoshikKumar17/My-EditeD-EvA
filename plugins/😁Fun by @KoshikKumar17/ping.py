@@ -14,7 +14,7 @@ async def help_me(_, message):
 
 @Client.on_message(filters.command("kiss", COMMAND_HAND_LER) & f_onw_fliter)
 async def help_me(_, message):
-    await message.reply_sticker(CAACAgUAAxkBAAEDz6hh_mV3Lhc5piK2FdksyUx_r7QFYwACwwIAAscw4FfCkTbYQEv_rCME))
+    await message.reply_sticker(CAACAgUAAxkBAAEDz6hh_mV3Lhc5piK2FdksyUx_r7QFYwACwwIAAscw4FfCkTbYQEv_rCME)
 
 @Client.on_message(filters.command("music", COMMAND_HAND_LER) & f_onw_fliter)
 async def help_me(_, message):
