@@ -26,7 +26,7 @@ async def help_me(_, message):
 
 @Client.on_message(filters.command("good", COMMAND_HAND_LER) & f_onw_fliter)
 async def help_me(_, message):
-    await message.reply_sticker(CAACAgUAAxkBAAEDz85h_nls6-mcG24RgJY1mU5xsuDp2QACxQQAAgG_aFSPjT1h-8iLFiME)
+    await message.reply_sticker(CAACAgUAAxkBAAEDz99h_oIM9Qa9Pqku9U1O6SkCwjsprgACagUAAmvb4VcvYwqSVGfp4yME)
 
 @Client.on_message(filters.command("sorry", COMMAND_HAND_LER) & f_onw_fliter)
 async def help_me(_, message):
