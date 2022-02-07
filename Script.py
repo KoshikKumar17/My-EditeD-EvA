@@ -17,6 +17,15 @@ class script(object):
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.4 [ ʂƚαႦʅҽ ]
 
  Commands👇🏻             Changelogs👇🏻</b>"""
+
+    REVIEW_TXT = """Hey Friends 👋,
+
+Tell me your <b>opinion</b> about this bot😉
+
+<b>It will motivate me to make this bot more user-friendly.😋
+
+If you want to request any bugs or features comment here😉</b>
+"""
     ABOUTT_TEXT = """Hey,
 
 Click <b>below Button👇🏻</b> to know about this bot."""
