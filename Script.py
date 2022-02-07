@@ -14,7 +14,7 @@ class script(object):
 
 ✯ 😝 Thanks to: <a href='https://t.me/SubinPS'> Subin P S </a> and @TeamEvaMaria
 
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.4 [ ʂƚαႦʅҽ ]
+✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.2.1 [ Major ]
 
  Commands👇🏻             Changelogs👇🏻</b>"""
 
@@ -31,15 +31,24 @@ If you want to request any bugs or features comment here😉</b>
 Click <b>below Button👇🏻</b> to know about this bot."""
     CHANGELOGS_TXT = """Hey.,🙂
 <b>Here is the Changelogs of the Latest Update
-Date:- 28th January 2022 > 09:00AM IST 🇮🇳
+Date:- 7th February 2022 > 09:00AM IST 🇮🇳
 Changelogs:-</b>
 
-<i>--> Added New command /about .
+<i>--> Added New command /review .
 --> Bot Updated .
 --> Some Bugs Fixed .
---> Answer all callback queries in new UI 😇.</i>
+--> Added many new things.
+Send these messages below to bot like .hi
+.hi          .ping           .ok
 
-<b>Thanks❤️,
+.kiss        .laugh          .good
+
+.sorry           .music
+---> Click Menu in below left corner for more😂</i>
+
+<b>For bugs hit /review ...
+
+Thanks❤️,
 @KoshikKumar17</b>"""
     COMMANDS1_TXT = """<b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
 <a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'> 𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄 </a> ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ..."""
