@@ -20,7 +20,7 @@ async def getsticker(bot, update):
                                        one_time_keyboard=True,
                                        resize_keyboard=True)
     await update.reply_text(
-        text=script.GETSTICKER_TXT.format(message.from_user.mention),
+        text=script.GETSTICKER_TXT,
         reply_markup = reply_markup,
         disable_web_page_preview=True,
     )
