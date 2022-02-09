@@ -22,7 +22,7 @@ class script(object):
 Choose an Emoji😜 of your choice from Below.</b>
 
 <i>Currently only these supported.. 
-I will add more soon...</i>
+I will add more soon...</i>"""
 
     REVIEW_TXT = """Hey Friends 👋,
 
