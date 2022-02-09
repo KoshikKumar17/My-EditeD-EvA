@@ -7,7 +7,7 @@ from info import (
 from plugins.helper_functions.cust_p_filters import f_onw_fliter
 
 
-@Client.on_message(filters.command("kiss", COMMAND_HAND_LER) & f_onw_fliter)
+@Client.on_message(filters.command("😘", COMMAND_HAND_LER) & f_onw_fliter)
 async def kiss(_, message):
     await message.reply_sticker("CAACAgUAAxkBAAEDz6hh_mV3Lhc5piK2FdksyUx_r7QFYwACwwIAAscw4FfCkTbYQEv_rCME")
 
