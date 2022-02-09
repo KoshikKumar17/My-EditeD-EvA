@@ -2,8 +2,7 @@
 import os
 from Script import script
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram.types import ReplyKeyboardMarkup, one_time_keyboard, resize_keyboard
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup
 
 @Client.on_message(filters.private & filters.command(["review"]))
 async def review(bot, update):
