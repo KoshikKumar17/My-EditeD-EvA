@@ -18,7 +18,7 @@ async def getsticker(bot, update):
     keyboard = [['.😘', '.😂', '.😃'],['.😔', '.👋', '.🆗']]
     reply_markup = ReplyKeyboardMarkup(keyboard,
                                        one_time_keyboard=True,
-                                       single_use=True,
+                                       single_use_keyboard=True,
                                        resize_keyboard=True)
     await update.reply_text(
         text=script.GETSTICKER_TXT,
