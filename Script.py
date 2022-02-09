@@ -12,11 +12,17 @@ class script(object):
 
 ✯ 🙋‍♂️𝙱𝙾𝚃 FATHER: <a href='tg://user?id=1162032262'> @KoshikKumar17 </a>
 
-✯ 😝 Thanks to: <a href='https://t.me/SubinPS'> Subin P S </a> and @TeamEvaMaria
+✯ 😝 Thanks to: @TeamEvaMaria
 
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.2.1 [ Major ]
+✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.3.1 [ Major ]
 
  Commands👇🏻             Changelogs👇🏻</b>"""
+    GETSTICKER_TXT = """<b>Hey {},
+
+Choose an Emoji😜 of your choice from Below.</b>
+
+<i>Currently only these supported.. 
+I will add more soon...</i>
 
     REVIEW_TXT = """Hey Friends 👋,
 
@@ -31,19 +37,14 @@ If you want to request any bugs or features comment here😉</b>
 Click <b>below Button👇🏻</b> to know about this bot."""
     CHANGELOGS_TXT = """Hey.,🙂
 <b>Here is the Changelogs of the Latest Update
-Date:- 7th February 2022 > 09:00AM IST 🇮🇳
+Date:- 9th February 2022 > 09:00AM IST 🇮🇳
 Changelogs:-</b>
 
-<i>--> Added New command /review .
+<i>--> Added New command /getsticker .
 --> Bot Updated .
 --> Some Bugs Fixed .
 --> Added many new things.
-Send these messages below to bot like .hi
-.hi          .ping           .ok
-
-.kiss        .laugh          .good
-
-.sorry           .music
+Send /getsticker in bot to find more .
 ---> Click Menu in below left corner for more😂</i>
 
 <b>For bugs hit /review ...
