@@ -17,7 +17,7 @@ class script(object):
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.3.1 [ Major ]
 
  Commands👇🏻             Changelogs👇🏻</b>"""
-    GETSTICKER_TXT = """<b>Hey {},
+    GETSTICKER_TXT = """<b>Hey Bro👋,
 
 Choose an Emoji😜 of your choice from Below.</b>
 
