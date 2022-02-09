@@ -14,7 +14,7 @@ async def review(bot, update):
     )
 
 @Client.on_message(filters.private & filters.command(["getsticker"]))
-async def review(bot, update):
+async def getsticker(bot, update):
     keyboard = [['.😘', '.😂', '.😃'],['.😔', '.👋', '.🆗']]
     reply_markup = ReplyKeyboardMarkup(keyboard,
                                        one_time_keyboard=True,
