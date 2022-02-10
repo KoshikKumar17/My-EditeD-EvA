@@ -3,6 +3,8 @@ import os
 from Script import script
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup
+from jokeapi import Jokes # Import the Jokes class
+import asyncio
 
 @Client.on_message(filters.private & filters.command(["review"]))
 async def review(bot, update):
@@ -24,3 +26,17 @@ async def getsticker(bot, update):
         reply_markup = reply_markup,
         disable_web_page_preview=True,
     )
+
+@Client.on_message(filters.private & filters.command(["joke"]))
+async def print_joke():
+    j = await Jokes()  # Initialise the class
+    await j.get_joke()  # Retrieve a random joke
+    if joke["type"] == "single": # Print the joke
+        print(joke["joke"])
+    else:
+        print(joke["setup"])
+        print(joke["delivery"])
+
+asyncio.run(print_joke())
+    rm = await message.reply_text("...🤔")
+    await rm.edit(f"{print_joke} \n \n **~ @KoshikKumar17**")
