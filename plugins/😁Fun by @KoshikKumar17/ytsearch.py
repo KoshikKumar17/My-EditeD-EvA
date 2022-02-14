@@ -1,7 +1,16 @@
-@Bot.on_message(filters.private & filters.all)
+#By @FayasNoushad and 
+import os
+import ytthumb
+import requests
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultPhoto
+from youtubesearchpython import VideosSearch
+
+
+@Client.on_message(filters.private & filters.all)
 async def text(bot, update):
     
-    text = "Search youtube videos using below buttons.\n\nMade by @FayasNoushad"
+    text = "Search youtube videos using below buttons.\n\n**Made by @KoshikKumar17**"
     reply_markup = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton(text="Search here", switch_inline_query_current_chat="")],
@@ -17,7 +26,7 @@ async def text(bot, update):
     )
 
 
-@Bot.on_inline_query()
+@Client.on_inline_query()
 async def search(bot, update):
     
     results = VideosSearch(update.query, limit=50).result()
