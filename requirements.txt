@@ -9,3 +9,6 @@ bs4
 imdbpy
 googletrans==4.0.0-rc1
 telegraph
+requests
+ytthumb
+youtube-search-python
