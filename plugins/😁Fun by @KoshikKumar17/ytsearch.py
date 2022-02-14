@@ -7,14 +7,15 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQue
 from youtubesearchpython import VideosSearch
 
 
-@Client.on_message(filters.private & filters.all)
+@Client.on_message(filters.private & filters.command("ytsearch"))
 async def text(bot, update):
     
     text = "Search youtube videos using below buttons.\n\n**Made by @KoshikKumar17**"
     reply_markup = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(text="Search here", switch_inline_query_current_chat="")],
-            [InlineKeyboardButton(text="Search in another chat", switch_inline_query="")]
+            [InlineKeyboardButton(text="⭕Search Here⭕", switch_inline_query_current_chat="")],
+            [InlineKeyboardButton(text="↗️Search in Another Chat ↗️", switch_inline_query="")],
+            [InlineKeyboardButton(text="🔶Search Using @vid 🔶", url=tg://share?url=@vid%20)]
         ]
     )
     
