@@ -10,9 +10,15 @@ imdbpy
 googletrans==4.0.0-rc1
 telegraph
 ytthumb
-youtube-search-python
+youtube-search-python==1.4.6
 youtube_search
+youtube-dl
+yt-dlp
+wget
+python-arq
+ffmpeg-python
 aiofiles
+aiohttp
 gTTS
 asyncio==3.4.3
 aiohttp==3.7.4
