@@ -1,3 +1,4 @@
+# (c) @KoshikKumar17
 import os
 import requests
 from requests.utils import requote_uri
@@ -23,26 +24,11 @@ def gett_joke(type):
     try:
         r = requests.get(API + requote_uri(type.lower()))
         info = r.json()
-        country = info['country'].capitalize()
-        active = info['active']
-        confirmed = info['confirmed']
-        deaths = info['deaths']
-        info_id = info['id']
-        last_update = info['last_update']
-        latitude = info['latitude']
-        longitude = info['longitude']
-        recovered = info['recovered']
-        covid_info = f"""--**Covid 19 Information**--
-Country : `{country}`
-Actived : `{active}`
-Confirmed : `{confirmed}`
-Deaths : `{deaths}`
-ID : `{info_id}`
-Last Update : `{last_update}`
-Latitude : `{latitude}`
-Longitude : `{longitude}`
-Recovered : `{recovered}`
-Made by @SakuraBotUpdates ❤️"""
-        return covid_info
+        joke = info['joke']
+        gett_joke = f"""__**😂 Jokes 😂**__
+
+😁Here is Your Joke😁 :\n \n **{joke}**
+\nWith ❤️ by @KoshikKumar17"""
+        return gett_joke
     except Exception as error:
         return error
