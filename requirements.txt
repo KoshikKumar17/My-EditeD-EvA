@@ -7,7 +7,7 @@ umongo==3.0.1
 requests
 bs4
 imdbpy
-googletrans==4.0.0-rc1
+googletrans
 telegraph
 ytthumb
 youtube-search-python
