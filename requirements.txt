@@ -16,14 +16,3 @@ aiofiles
 gTTS
 asyncio==3.4.3
 aiohttp==3.7.4
-pyshorteners
-youtube-dl
-yt-dlp
-wget
-python-arq
-ffmpeg-python
-carbonnow==0.0.1
-Pillow>=4.2.0
-string-extract
-domain-extract
-hashtags_extract
