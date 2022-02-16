@@ -36,7 +36,7 @@ async def left(client,message):
 			except:
 			   	await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
 			
-              except:
-                         print("error")
+		except :
+			print("error")
 	else:
-			 ms = await message.reply_text("You can Use This Command by using reply to message😋")
+			 ms = await message.reply_text("You can Use This Command by using reply to message")
