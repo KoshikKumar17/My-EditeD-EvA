@@ -55,37 +55,36 @@ def a(client, message: Message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[Zaute Km]" 
+            performer = f"[@KoshikKumar17]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
 
         except Exception as e:
             print(e)
-            m.edit('**Found Literary Noting. Please Try Another Song or Use Correct Spelling!**')
+            m.edit('**Found Literary Nothing.🙄 Please Try Another Song or Use Correct Spelling!😪**')
             return
     except Exception as e:
         m.edit(
-            "**Enter Song Name with Command**❗\nFor Example: `/song Alone Marshmellow`"
+            "**Enter Song Name with Command**❗\nFor Example: `/song is qadar`"
         )
         print(str(e))
         return
-    m.edit("`Uploading... Please Wait...`")
+    m.edit("`⬆️Uploading... Please Wait...`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🏷 <b>Title:</b> <a href="{link}">{title}</a>'
+        rep = f'👋Hey {message.from_user.first_name}, Here is your song🎵 \n🏷 <b>Title:</b> <a href="{link}">{title}</a>\n**@KoshikKumar17**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',reply_to_message_id=reply_id, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
-        message.delete()
     except Exception as e:
-        m.edit('**An Error Occured. Please Report This To @JOSPSupport !!**')
+        m.edit('**An Error Occured😑. Please Report This To @KoshikKumar17 !!**')
         print(e)
     try:
         os.remove(audio_file)
@@ -130,8 +129,8 @@ async def progress(current, total, message, start, type_of_ps, file_name=None):
         time_to_completion = round((total - current) / speed) * 1000
         estimated_total_time = elapsed_time + time_to_completion
         progress_str = "{0}{1} {2}%\n".format(
-            "".join("▣" for i in range(math.floor(percentage / 10))),
-            "".join("□" for i in range(10 - math.floor(percentage / 10))),
+            "".join("★" for i in range(math.floor(percentage / 10))),
+            "".join("☆" for i in range(10 - math.floor(percentage / 10))),
             round(percentage, 2),
         )
 
@@ -141,7 +140,7 @@ async def progress(current, total, message, start, type_of_ps, file_name=None):
         if file_name:
             try:
                 await message.edit(
-                    "{}\n**File Name:** `{}`\n{}".format(type_of_ps, file_name, tmp)
+                    "{}\n**File Name:** `{}`\n{}\n \n**@".format(type_of_ps, file_name, tmp)
                 )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -273,12 +272,13 @@ async def vsong(client, message: Message):
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url, download=True)
     except Exception as e:
-        await event.edit(event, f"**Download Failed** \n**Error :** `{str(e)}`")
+        await event.edit(event, f"**Download Failed😒😒** \n**Error :** `{str(e)}` \n**@KoshikKumar17**")
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""
 **🏷️ Video :** [{thum}]({mo})
+**@KoshikKumar17**
 """
     await client.send_video(
         message.chat.id, reply_to_message_id=reply_id,
@@ -292,7 +292,7 @@ async def vsong(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"**📥 Download** `{urlissed}`",
+            f"**📥 Downloading** `{urlissed}`",
             file_stark,
         ),
     )
