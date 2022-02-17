@@ -14,7 +14,7 @@ class script(object):
 
 ✯ 😝 Thanks to: @TeamEvaMaria
 
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.3.1 [ Major ]
+✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.5.0 [ Major ]
 
  Commands👇🏻             Changelogs👇🏻</b>"""
     GETSTICKER_TXT = """<b>Hey Bro👋,
@@ -37,16 +37,16 @@ If you want to request any bugs or features comment here😉</b>
 Click <b>below Button👇🏻</b> to know about this bot."""
     CHANGELOGS_TXT = """Hey.,🙂
 <b>Here is the Changelogs of the Latest Update
-Date:- 9th February 2022 > 09:00AM IST 🇮🇳
+Date:- 17th February 2022 > 09:00AM IST 🇮🇳
 Changelogs:-</b>
 
-<i>--> Added New command /getsticker .
+<i>--> Added New commands /video , /song , .runs , /tts , /joke single .
 --> Bot Updated .
 --> Some Bugs Fixed .
 --> Added many new things.
-Send /getsticker in bot to find more .
 ---> Click Menu in below left corner for more😂</i>
 
+I can't tell more here. Please <a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'> CLICK_HERE </a> to get detailed information...
 <b>For bugs hit /review ...
 
 Thanks❤️,
@@ -61,7 +61,7 @@ Thanks❤️,
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.5.0 [ 𝙱𝙴𝚃𝙰 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
 - Source - https://github.com/EvamariaTG/EvaMaria  
