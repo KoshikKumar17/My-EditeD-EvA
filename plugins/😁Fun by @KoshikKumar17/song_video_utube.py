@@ -55,7 +55,7 @@ def a(client, message: Message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[@KoshikKumar17]" 
+            performer = f"[Koshik Kumar]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
@@ -76,7 +76,7 @@ def a(client, message: Message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'👋Hey {message.from_user.first_name}, Here is your song🎵 \n🏷 <b>Title:</b> <a href="{link}">{title}</a>\n**@KoshikKumar17**'
+        rep = f'<b>👋Hey {message.from_user.first_name}, Here is your song🎵</b> \n🏷 <b>Title:</b> <a href="{link}">{title}</a>\n \n<b>@KoshikKumar17</b>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -140,7 +140,7 @@ async def progress(current, total, message, start, type_of_ps, file_name=None):
         if file_name:
             try:
                 await message.edit(
-                    "{}\n**File Name:** `{}`\n{}\n \n**@".format(type_of_ps, file_name, tmp)
+                    "{}\n**File Name:** `{}`\n{}\n \n**@KoshikKumar17**".format(type_of_ps, file_name, tmp)
                 )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -278,6 +278,7 @@ async def vsong(client, message: Message):
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""
 **🏷️ Video :** [{thum}]({mo})
+
 **@KoshikKumar17**
 """
     await client.send_video(
