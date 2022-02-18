@@ -5,7 +5,6 @@ from plugins.list import list
 
 @Client.on_message(filters.command(["tr"]))
 async def left(client,message):
-await message.reply("Translating...")
 	if (message.reply_to_message):
 		try:
 			lgcd = message.text.split("/tr")
@@ -33,9 +32,9 @@ await message.reply("Translating...")
 						fromt = i
 					if list[i] == translation.dest:
 						to = i 
-				await message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
+				await message.reply(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
 			except:
-			   	await message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
+			   	await message.reply(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
 			
 		except :
 			print("error")
