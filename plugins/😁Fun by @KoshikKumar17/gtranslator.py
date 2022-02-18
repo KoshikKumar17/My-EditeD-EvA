@@ -10,7 +10,7 @@ async def left(client,message):
 			lgcd = message.text.split("/tr")
 			lg_cd = lgcd[1].lower().replace(" ", "")
 			tr_text = message.reply_to_message.text
-                        koshik = await message.reply_text("`Translating...😪, Give some time⌛`")
+                        koshik = await message.reply_text("Translating...😪,Give some time⌛")
 			translator = Translator()
 			translation = translator.translate(tr_text,dest = lg_cd)
 			hehek = InlineKeyboardMarkup(
