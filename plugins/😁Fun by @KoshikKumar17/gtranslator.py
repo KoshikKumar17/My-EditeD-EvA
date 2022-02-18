@@ -5,6 +5,7 @@ from plugins.list import list
 
 @Client.on_message(filters.command(["tr"]))
 async def left(client,message):
+await message.reply("Translating...")
 	if (message.reply_to_message):
 		try:
 			lgcd = message.text.split("/tr")
@@ -26,7 +27,6 @@ async def left(client,message):
                                     ],
                                 ]
                             )
-await message.reply("Translating...")
 			try:
 				for i in list:
 					if list[i]==translation.src:
