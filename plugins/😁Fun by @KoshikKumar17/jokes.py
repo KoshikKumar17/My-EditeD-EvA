@@ -17,7 +17,6 @@ async def reply_info(bot, update):
     await koshik.edit_text(
         text=gett_joke(query),
         disable_web_page_preview=True,
-        quote=True,
         reply_markup=reply_markup
     )
 
