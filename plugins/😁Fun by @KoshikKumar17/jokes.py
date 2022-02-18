@@ -11,9 +11,10 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️Father🙋�
 
 @Client.on_message(filters.command("joke"))
 async def reply_info(bot, update):
+    koshik = await update.reply_text("**Getting a Joke...😂**")
     query = update.text.split(None, 1)[1]
     reply_markup = BUTTONS
-    await update.reply_text(
+    await koshik.edit_text(
         text=gett_joke(query),
         disable_web_page_preview=True,
         quote=True,
