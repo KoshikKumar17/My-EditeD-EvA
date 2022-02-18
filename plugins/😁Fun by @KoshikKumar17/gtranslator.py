@@ -26,7 +26,7 @@ async def left(client,message):
                                     ],
                                 ]
                             )
-await message.reply_text("Translating...")
+await message.reply("Translating...")
 			try:
 				for i in list:
 					if list[i]==translation.src:
