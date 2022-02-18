@@ -10,13 +10,14 @@ TMP_DOWNLOAD_DIRECTORY = "./DOWNLOADS/"
     filters.command("telegraph") 
 )
 async def telegraph(client, message):
+    koshik = await message.reply_text(**Processing...😪**)
     replied = message.reply_to_message
     if not replied:
-        await message.reply_text("Reply to a supported media file")
+        await koshik.edit_text("Reply to a supported media file")
         return
     file_info = get_file_id(replied)
     if not file_info:
-        await message.reply_text("Not supported!")
+        await koshik.edit_text("Not supported!")
         return
     _t = os.path.join(
         TMP_DOWNLOAD_DIRECTORY,
@@ -31,9 +32,9 @@ async def telegraph(client, message):
     try:
         response = upload_file(download_location)
     except Exception as document:
-        await message.reply_text(message, text=document)
+        await koshik edit_text(message, text=document)
     else:
-        await message.reply(
+        await koshik.edit_text(
             f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>",
             disable_web_page_preview=True
         )
