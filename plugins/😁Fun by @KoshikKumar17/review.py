@@ -6,10 +6,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyb
 
 @Client.on_message(filters.private & filters.command(["review"]))
 async def review(bot, update):
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('✨ Click Here to Review ✨', url='https://comments.bot/thread/--pwqNLA2')]])
-    await update.reply_text(
+   koshik = await message.reply_text("**Processing...**")
+        await koshik.edit_text(
         text=script.REVIEW_TXT,
-        reply_markup = reply_markup,
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('✨ Click Here to Review ✨', url='https://comments.bot/thread/--pwqNLA2')]])
         disable_web_page_preview=True,
     )
 
