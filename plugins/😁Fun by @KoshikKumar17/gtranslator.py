@@ -7,7 +7,6 @@ from plugins.list import list
 async def left(client,message):
 	if (message.reply_to_message):
 		try:
-                        await message.reply_text("Translating...")
 			lgcd = message.text.split("/tr")
 			lg_cd = lgcd[1].lower().replace(" ", "")
 			tr_text = message.reply_to_message.text
@@ -27,6 +26,7 @@ async def left(client,message):
                                     ],
                                 ]
                             )
+                        await message.reply_text("Translating...")
 			try:
 				for i in list:
 					if list[i]==translation.src:
