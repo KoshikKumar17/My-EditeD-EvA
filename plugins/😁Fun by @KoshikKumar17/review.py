@@ -9,8 +9,8 @@ async def review(bot, update):
         koshik = await message.reply_text("**Processing...**")
         await koshik.edit_text(
         text=script.REVIEW_TXT,
-        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('✨ Click Here to Review ✨', url='https://comments.bot/thread/--pwqNLA2')]])
-        disable_web_page_preview=True,
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('✨ Click Here to Review ✨', url='https://comments.bot/thread/--pwqNLA2')]]),
+        disable_web_page_preview = True
     )
 
 @Client.on_message(filters.private & filters.command(["getsticker"]))
