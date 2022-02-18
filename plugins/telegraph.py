@@ -32,7 +32,7 @@ async def telegraph(client, message):
     try:
         response = upload_file(download_location)
     except Exception as document:
-        await koshik edit_text(message, text=document)
+        await koshik.edit_text(message, text=document)
     else:
         await koshik.edit_text(
             f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>",
