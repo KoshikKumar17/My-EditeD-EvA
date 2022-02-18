@@ -10,7 +10,7 @@ TMP_DOWNLOAD_DIRECTORY = "./DOWNLOADS/"
     filters.command("telegraph") 
 )
 async def telegraph(client, message):
-    koshik = await message.reply_text(**Processing...😪**)
+    koshik = await message.reply_text("**Processing...😪**")
     replied = message.reply_to_message
     if not replied:
         await koshik.edit_text("Reply to a supported media file")
