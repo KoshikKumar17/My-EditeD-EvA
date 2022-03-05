@@ -1,5 +1,6 @@
-FROM python:3.10.2-slim-buster
+FROM python:3.10-slim-buster
 
+ENV PYTHON_VERSION 3.10.2
 RUN apt update && apt upgrade -y
 RUN apt install git -y
 COPY requirements.txt /requirements.txt
