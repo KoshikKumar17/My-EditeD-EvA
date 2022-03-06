@@ -9,7 +9,7 @@ PX = "https://game-of-thrones-quotes.herokuapp.com/v1/"
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️ Made by 🙋‍♂️', url='https://t.me/KoshikKumar17')]])
 
-@Client.on_message(filters.command("joke"))
+@Client.on_message(filters.command("thought"))
 async def get_thought(bot, update):
     koshik = await update.reply_text("**Getting a Thought...😇**")
     query = update.text.split(None, 1)[1]
