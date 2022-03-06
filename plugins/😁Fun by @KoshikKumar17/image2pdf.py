@@ -5,6 +5,8 @@ from pyrogram import Client,filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
+LIST = {}
+
 @Client.on_message(filters.private & filters.photo)
 async def pdf(client,message):
  
