@@ -4,7 +4,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import *
 
-CALC_TXT = "**🙋🏻‍♂️ Made with ❤️ in 🇮🇳 by @KoshikKumar17 🙇🏻**"
+CALC_TXT = "**🙋🏻‍♂️ Made by @KoshikKumar17 🙇🏻**"
 CALC_BTNS = InlineKeyboardMarkup(
     [
         [
@@ -36,9 +36,6 @@ CALC_BTNS = InlineKeyboardMarkup(
             InlineKeyboardButton("0", callback_data="0"),
             InlineKeyboardButton("=", callback_data="="),
             InlineKeyboardButton("+", callback_data="+"),
-        ],
-        [
-            InlineKeyboardButton("❤️ @KoshikKumar17 ❤️", url="https://telegram.me/KoshikKumar17")
         ]
     ]
 )
