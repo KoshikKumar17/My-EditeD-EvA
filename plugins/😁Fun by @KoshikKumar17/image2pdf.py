@@ -22,7 +22,7 @@ async def pdf(client,message):
  image = Image.open(file)
  img = image.convert('RGB')
  LIST[message.from_user.id].append(img)
- await ms.edit(f"{len(LIST[message.from_user.id])} image  **Successfully created PDF** if you want add more image **Send me One by one**✌️\n\n **If done Click Here 👉 /convert** \n\n**@KoshikKumar17**")
+ await ms.edit(f"{len(LIST[message.from_user.id])} image  **Successfully created PDF** if you want add more image **Send me One by one**✌️\n\n **If done Click Here 👉 /c2pdf** \n\n**@KoshikKumar17**")
  
 
 @Client.on_message(filters.command(['c2pdf']))
