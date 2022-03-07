@@ -1,6 +1,7 @@
 # (c) @KoshikKumar17
 import os
 import requests
+from requests.utils import requote_uri
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -20,8 +21,10 @@ async def reply_info(bot, update):
 
 def gett_joke(type):
     try:
-        r = requests.get("https://v2.jokeapi.dev/joke/Any?type=single").json()
-        joke = r['joke']
+        url = 'https://v2.jokeapi.dev/joke/Any?type=single'
+        r = requests.get(url)
+        info = r.json()
+        joke = info['joke']
         gett_joke = f"""__**😂 Jokes 😂**__
 
 😁Here is Your Joke😁 :\n \n **{joke}**
