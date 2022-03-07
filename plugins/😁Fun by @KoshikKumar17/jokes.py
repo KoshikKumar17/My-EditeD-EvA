@@ -25,8 +25,8 @@ def gett_joke(type):
         r = requests.get(API + requote_uri(type.lower()))
         info = r.json()
         joke = info['joke']
-        gett_joke = f"""😂 Jokes 😂
-😁Here is Your Joke😁 :\n \n {joke}
+        gett_joke = f"""
+😁Here is Your Joke😁 :\n \n **{joke}**
 \nWith ❤️ by @KoshikKumar17"""
         return gett_joke
     except Exception as error:
