@@ -19,7 +19,7 @@ async def reply_info(bot, update):
         reply_markup=reply_markup
     )
 
-def gett_joke:
+def gett_joke(type):
     try:
         r = requests.get(API + requote_uri())
         info = r.json()
