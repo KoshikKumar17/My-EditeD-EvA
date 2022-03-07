@@ -28,6 +28,6 @@ def gett_tht(type):
         writer = info['name']
         gett_tht = f"""**{thought}**\n\n                           -->{writer}
 \n **@KoshikKumar17**"""
-        return gett_joke
+        return gett_tht
     except Exception as error:
         return error
