@@ -14,7 +14,7 @@ async def get_thought(bot, update):
     koshik = await update.reply_text("**I Am Processing...😇**")
     reply_markup = BUTTONS
     await koshik.edit_text(
-        text=gett_tht(query),
+        text=gett_tht,
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )
