@@ -20,7 +20,7 @@ async def reply_info(bot, update):
 
 def gett_joke :
     try:
-        r = requests.get(https://v2.jokeapi.dev/joke/Any?type=single).json()
+        r = requests.get("https://v2.jokeapi.dev/joke/Any?type=single").json()
         joke = r['joke']
         gett_joke = f"""__**😂 Jokes 😂**__
 
