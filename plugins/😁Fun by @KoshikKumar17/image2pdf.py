@@ -21,12 +21,13 @@ async def pdf(client,message):
  
  image = Image.open(file)
  img = image.convert('RGB')
- shit = LIST[message.from_user.id].append(img)
+ LIST[message.from_user.id].append(img)
  await ms.edit(f"{len(LIST[message.from_user.id])} image  **Successfully created PDF** if you want add more image **Send me One by one**✌️\n\n **If done Click Here 👉 /c2pdf** \n\n**@KoshikKumar17**")
  
 @Client.on_message(filters.command(['removeit']))
 async def removeit(client,message):
  px = await message.reply_text("**Removing...🗑️**")
+ shit = LIST[message.from_user.id].append(img)
  os.remove(shit)
  await px.edit_text("**Successfully Removed these Images..😇**")
 
