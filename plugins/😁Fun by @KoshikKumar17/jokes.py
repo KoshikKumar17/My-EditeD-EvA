@@ -18,9 +18,9 @@ async def reply_info(bot, update):
         reply_markup=reply_markup
     )
 
-def gett_joke(type):
+def gett_joke :
     try:
-        r = requests.get(API).json()
+        r = requests.get(https://v2.jokeapi.dev/joke/Any?type=single).json()
         joke = r['joke']
         gett_joke = f"""__**😂 Jokes 😂**__
 
