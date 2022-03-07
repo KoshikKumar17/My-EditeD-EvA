@@ -25,7 +25,7 @@ async def pdf(client,message):
  await ms.edit(f"{len(LIST[message.from_user.id])} image  **Successfully created PDF** if you want add more image **Send me One by one**✌️\n\n **If done Click Here 👉 /c2pdf** \n\n**@KoshikKumar17**")
  
 @Client.on_message(filters.command(['removeit']))
-async def done(client,message):
+async def removeit(client,message):
  px = await message.reply_text("**Removing...🗑️**")
  os.remove(shit)
  await px.edit_text("**Successfully Removed these Images..😇**")
