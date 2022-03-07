@@ -25,8 +25,7 @@ def gett_tht(type):
         r = requests.get(PX + requote_uri(type.lower()))
         info = r.json()
         thought = info['sentence']
-        writer = info['name']
-        gett_tht = f"""**{thought}**\n\n                           -->{writer}
+        gett_tht = f"""**{thought}**
 \n **@KoshikKumar17**"""
         return gett_tht
     except Exception as error:
