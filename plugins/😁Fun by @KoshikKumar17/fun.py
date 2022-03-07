@@ -51,7 +51,7 @@ moon_ani = [
 )
 async def moonani(_, message):
     """ .moonani"""
-def moonanimation(bot: Bot, update: Update):
+def moonanimation(bot, update):
     msg = update.effective_message.reply_text('🌚') 
     for x in range(EDIT_TIMES):
         msg.edit_text(moon_ani[x%32])
