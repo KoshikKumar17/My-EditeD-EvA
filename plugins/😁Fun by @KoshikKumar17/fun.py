@@ -49,9 +49,7 @@ moon_ani = [
     filters.command("moonani", COMMAND_HAND_LER) &
     f_onw_fliter
 )
-async def moonani(_, message):
-    """ .moonani"""
-def moonanimation(bot, update):
+async def moonani(bot, update):
     msg = update.effective_message.reply_text('🌚') 
     for x in range(EDIT_TIMES):
         msg.edit_text(moon_ani[x%32])
