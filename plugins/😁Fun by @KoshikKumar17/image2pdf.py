@@ -24,8 +24,8 @@ async def pdf(client,message):
  LIST[message.from_user.id].append(img)
  await ms.edit(f"{len(LIST[message.from_user.id])} image  **Successfully created PDF** if you want add more image **Send me One by one**✌️\n\n **If done Click Here 👉 /c2pdf** \n\n**@KoshikKumar17**")
  if media.text == "/removeit":
-                return await m.reply_text('Cancelled Successfully ✌')
-            LIST[message.from_user.id].append(img)
+ return await m.reply_text('Cancelled Successfully ✌')
+ LIST[message.from_user.id].append(img)
 
 @Client.on_message(filters.command(['c2pdf']))
 async def done(client,message):
