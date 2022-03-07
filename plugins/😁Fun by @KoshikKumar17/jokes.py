@@ -22,7 +22,7 @@ async def reply_info(bot, update):
 def gett_joke(type):
     try:
         url = 'https://v2.jokeapi.dev/joke/Any?type=single'
-        r = requests.get(url)
+        r = requote_uri(url)
         info = r.json()
         joke = info['joke']
         gett_joke = f"""__**😂 Jokes 😂**__
