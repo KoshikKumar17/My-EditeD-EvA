@@ -5,13 +5,13 @@ from requests.utils import requote_uri
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-PX = "https://game-of-thrones-quotes.herokuapp.com/v1/"
+PX = "https://game-of-thrones-quotes.herokuapp.com/v1/random"
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️ Made by 🙋‍♂️', url='https://t.me/KoshikKumar17')]])
 
 @Client.on_message(filters.command("thought"))
 async def get_thought(bot, update):
-    koshik = await update.reply_text("**Getting a Thought...😇**")
+    koshik = await update.reply_text("**I Am Processing...😇**")
     query = update.text.split(None, 1)[1]
     reply_markup = BUTTONS
     await koshik.edit_text(
