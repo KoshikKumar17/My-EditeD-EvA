@@ -257,7 +257,7 @@ async def vsong(client, message: Message):
     url = mo
     sedlyf = wget.download(kekme)
     opts = {
-        "format": "best",
+        "format": "medium",
         "addmetadata": True,
         "key": "FFmpegMetadata",
         "prefer_ffmpeg": True,
