@@ -272,7 +272,7 @@ async def vsong(client, message: Message):
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url, download=True)
     except Exception as e:
-        await event.edit(event, f"**Download Failed😒😒** \n**Error :** `{str(e)}` \n**@KoshikKumar17**")
+        await pablo.edit(event, f"**Download Failed😒😒** \n**Error :** `{str(e)}` \n**@KoshikKumar17**")
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
