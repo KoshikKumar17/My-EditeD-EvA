@@ -40,7 +40,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #My Own by @KoshikKumar17
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", ".")
 #For heroku dyno status
-HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "")
+HEROKU_API_KEY = environ.get("HEROKU_API_KEY", "")
 BT_STRT_TM = time.time()
 
 # Others
