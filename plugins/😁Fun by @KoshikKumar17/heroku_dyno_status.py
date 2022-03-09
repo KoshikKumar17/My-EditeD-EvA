@@ -9,14 +9,15 @@ import requests
 from pyrogram import filters
 from pyrogram import Client as Koshik
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from info import HEROKU_API_KEY
+from info import HEROKU_API_KEY, BT_STRT_TM
 from utils import humanbytes
 
 @Koshik.on_message((filters.private | filters.group) & filters.command('botstatus'))
-async def bot_status(client,message):
-    if Config.HEROKU_API_KEY:
+async def bot_dyno_status(client,message):
+    px = await message.reply_text("**Fetching Bot Status...✨**", quote=true)
+    if HEROKU_API_KEY:
         try:
-            server = heroku3.from_key(Config.HEROKU_API_KEY)
+            server = heroku3.from_key(HEROKU_API_KEY)
 
             user_agent = (
                 'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
@@ -26,7 +27,7 @@ async def bot_status(client,message):
             accountid = server.account().id
             headers = {
             'User-Agent': user_agent,
-            'Authorization': f'Bearer {Config.HEROKU_API_KEY}',
+            'Authorization': f'Bearer {HEROKU_API_KEY}',
             'Accept': 'application/vnd.heroku+json; version=3.account-quotas',
             }
 
@@ -53,42 +54,27 @@ async def bot_status(client,message):
 
                 quota_details = f"""
 **Heroku Account Status**
-> __You have **{total} hours** of free dyno quota available each month.__
+> __You have **{total} hours** of free dyno quota available each month.😉__
 > __Dyno hours used this month__ ;
-        - **{used} hours**  ( {usedperc}% )
+        - **{used} hours🙃**  ( {usedperc}% )
 > __Dyno hours remaining this month__ ;
-        - **{hours} hours**  ( {leftperc}% )
-        - **Approximately {days} days!**
+        - **{hours} hours😁**  ( {leftperc}% )
+        - **Approximately {days} days!🥳🥳**
 """
             else:
                 quota_details = ""
         except:
-            print("Check your Heroku API key")
+            print("`Check your Heroku API key...`")
             quota_details = ""
     else:
         quota_details = ""
 
-    uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - BOT_START_TIME))
+    uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - BT_STRT_TM))
 
-    try:
-        t, u, f = shutil.disk_usage(".")
-        total = humanbytes(t)
-        used = humanbytes(u)
-        free = humanbytes(f)
-
-        disk = "\n**Disk Details**\n\n" \
-            f"> USED  :  {used} / {total}\n" \
-            f"> FREE  :  {free}\n\n"
-    except:
-        disk = ""
-
-    await message.reply_text(
-        "**Current status of your bot!**\n\n"
-        f"> __**{filters}** filters across **{chats}** chats__\n\n"
-        f"{userstats}"
+    await px.edit_text(
+        "**🙇🏻‍♂️ Current status of This Bot! 🙇🏻‍♂️**\n\n"
         f"> __BOT Uptime__ : **{uptime}**\n\n"
         f"{quota_details}"
-        f"{disk}",
         quote=True,
         parse_mode="md"
     )
