@@ -1,4 +1,5 @@
 import re
+import time
 from os import environ
 
 id_pattern = re.compile(r'^.\d+$')
@@ -40,6 +41,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", ".")
 #For heroku dyno status
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "")
+BT_STRT_TM = time.time()
+
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
