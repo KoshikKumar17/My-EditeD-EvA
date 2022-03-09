@@ -14,7 +14,7 @@ from utils import humanbytes
 
 @Koshik.on_message((filters.private | filters.group) & filters.command('botstatus'))
 async def bot_dyno_status(client,message):
-    px = await message.reply_text("**Fetching Bot Status...✨**", quote=true)
+    px = await message.reply_text("**Fetching Bot Status...✨**")
     if HEROKU_API_KEY:
         try:
             server = heroku3.from_key(HEROKU_API_KEY)
