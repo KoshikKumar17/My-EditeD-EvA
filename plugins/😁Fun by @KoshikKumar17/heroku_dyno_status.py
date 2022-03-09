@@ -75,5 +75,4 @@ async def bot_dyno_status(client,message):
         "**🙇🏻‍♂️ Current status of This Bot! 🙇🏻‍♂️**\n\n"
         f"> __BOT Uptime__ : **{uptime}**\n\n"
         f"{quota_details}"
-        parse_mode="md"
     )
