@@ -1,5 +1,5 @@
 <h1 align="center">
-  <b>[KoshikKumar17'S Bot](https://telegram.me/mybotkk_17bot)</b>
+  <b><a href="https://telegram.me/mybotkk_17bot">KoshikKumar17'S Bot</a></b>
 </h1>
 
 
