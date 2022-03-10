@@ -1,8 +1,5 @@
-<p align="center">
-  <img src="assets/logo.jpg" alt="Eva Maria Logo">
-</p>
 <h1 align="center">
-  <b>Eva Maria Bot</b>
+  <b>[KoshikKumar17'S Bot](https://telegram.me/mybotkk_17bot)</b>
 </h1>
 
 
