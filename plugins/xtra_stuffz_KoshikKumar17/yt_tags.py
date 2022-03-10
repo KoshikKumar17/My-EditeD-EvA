@@ -24,7 +24,7 @@ async def yttags(bot, message):
         return await message.reply_text("**Reply to some Youtube link..🤕, Brother.🙃**")
     if not message.reply_to_message.text:
         return await message.reply_text("**Reply to some Youtube link..🤕, Brother.🙃**")
-    if ("youtube.com" not in m.text) or ("youtu.be" not in m.text):
+    if ("youtube.com" not in message.reply_to_message.text) or ("youtu.be" not in message.reply_to_message.text):
         await m.reply_text(text=f"**Reply to some Youtube link..🤕**")
         return
     link = message.reply_to_message.text
