@@ -9,7 +9,7 @@ import requests
 from pyrogram import filters
 from pyrogram import Client as Koshik
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from info import HEROKU_API_KEY, BT_STRT_TM, HEROKU_APP_NAME, ADMINS
+from info import HEROKU_API_KEY, BT_STRT_TM
 from utils import humanbytes
 
 @Koshik.on_message((filters.private | filters.group) & filters.command('botstatus'))
@@ -76,20 +76,3 @@ async def bot_dyno_status(client,message):
         f"> __BOT Uptime__ : **{uptime}**\nBot was restarted **{uptime}** ago..\n\n"
         f"{quota_details}"
     )
-@Koshik.on_message(filters.command('restartbot') & filters.user(ADMINS))
-async def heroku_restart(client,message):
-    if str(message.from_user.id) not in ADMINS:
-        return
-    x = None
-    if not HEROKU_API_KEY and HEROKU_APP_NAME:
-        x = None
-    else:
-        try:
-            acc = heroku3.from_key(HEROKU_API_KEY)
-            bot = acc.apps()[HEROKU_APP_NAME]
-            bot.restart()
-            x = True
-        except Exception as e:
-            print(e)
-            x = False
-    return x
