@@ -299,7 +299,7 @@ async def vsong(client, message: Message):
         ),
     )
     await pablo.delete()
-    await save_file(files)
+    await save_file(file_stark)
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
