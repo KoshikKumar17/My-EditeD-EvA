@@ -299,7 +299,7 @@ async def vsong(client, message: Message):
         ),
     )
     await pablo.delete()
-    await save_file(media)
+    await save_file(files)
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
