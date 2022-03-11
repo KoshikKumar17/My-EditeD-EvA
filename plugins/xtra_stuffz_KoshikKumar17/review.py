@@ -13,7 +13,7 @@ async def review(bot, update):
         disable_web_page_preview = True
     )
 
-@Client.on_message(filters.private & filters.command(["getsticker"]))
+@Client.on_message(filters.private & filters.command(["getstckr"]))
 async def getsticker(bot, update):
     keyboard = [['.😘', '.😂', '.😃'],['.😔', '.👋', '.🆗']]
     reply_markup = ReplyKeyboardMarkup(keyboard,
