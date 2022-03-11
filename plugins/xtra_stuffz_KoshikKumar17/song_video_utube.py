@@ -17,6 +17,7 @@ from yt_dlp import YoutubeDL
 import youtube_dl
 from youtube_search import YoutubeSearch
 import requests
+from database.ia_filterdb import save_file
 
 # Convert hh:mm:ss to seconds
 def time_to_seconds(time):
@@ -299,5 +300,6 @@ async def vsong(client, message: Message):
     )
     await pablo.delete()
     for files in (sedlyf, file_stark):
+    await save_file(files)
         if files and os.path.exists(files):
             os.remove(files)
