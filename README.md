@@ -14,6 +14,17 @@
 
 ## Features
 
+- [x] Attach links
+- [x] songs download
+- [x] Jokes
+- [x] Heroku Dyno check
+- [x] Translate
+- [x] Text to Speech
+- [x] Thoughts
+- [x] YT Thumbnail Downloader
+- [x] YT Tag Finder
+- [x] Img to Pdf
+- [x] Telegraph
 - [x] Auto Filter
 - [x] Manual Filter
 - [x] IMDB
