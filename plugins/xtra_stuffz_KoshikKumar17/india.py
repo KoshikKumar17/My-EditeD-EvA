@@ -4,6 +4,8 @@ from pyrogram import Client as Koshik
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup
 
+BTN = InlineKeyboardMarkup([[InlineKeyboardButton('✨ 🇮🇳 ❤️ INDIA ❤️ 🇮🇳✨', url='https://india.gov.in')]])
+
 A = """**........❤️🇮🇳❤️.........**"""
 
 B = """**⣿⣿⣿⣿⣿⣍⠀⠉⠻⠟⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿**"""
@@ -144,8 +146,4 @@ INDIAN = """**⣿⣿⣿⣿⣿⣍⠀⠉⠻⠟⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 @Koshik.on_message(filters.private & filters.command(["india"]))
 async def india_art(bot, update):
         px = await update.reply_text(A,quote=True)
-        await px.edit_text(
-        text=INDIAN,
-        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('✨ 🇮🇳 ❤️ INDIA ❤️ 🇮🇳✨', url='https://india.gov.in')]]),
-        disable_web_page_preview = True
-    )
+        await px.edit_text(text=INDIAN, reply_markup=BTN)
