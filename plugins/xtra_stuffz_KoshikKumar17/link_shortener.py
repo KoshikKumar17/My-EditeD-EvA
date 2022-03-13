@@ -32,11 +32,11 @@ def shortlink(type):
         ttm = info['ttm.sh']
         shortlink = f"""
 **🔗Your link has been shortened 🔗** :\n \n
-**CLICK.RU:-** {clickru}\n \n
-**DA.GD:-** {dagd}\n \n
-**IS.GD:-** {isgd}\n \n
-**OSDB.LINK:-** {osdb}\n \n
-**TTM.SH:-** {ttm}\n \n
+**CLICKRU:-** {clickru}\n
+**DAGD:-** {dagd}\n
+**ISGD:-** {isgd}\n
+**OSDBLINK:-** {osdb}\n
+**TTMSH:-** {ttm}\n
 \n**•| @KoshikKumar17 |•**"""
         return shortlink
     except Exception as error:
