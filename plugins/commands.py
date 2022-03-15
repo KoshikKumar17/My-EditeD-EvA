@@ -59,7 +59,7 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await message.reply_text("<b>Please read the <a href="https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30">Bot's Manual</a> to use this bot easily and use all the features.</b>", quote=True, reply_markup=DX, parse_mode='html') 
+        await message.reply_text("Please read the Bot's Manual to use this bot easily and use all the features.\n\nhttps://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30", reply_markup=DX)
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
@@ -103,7 +103,7 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await message.reply_text("<b>Please read the <a href="https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30">Bot's Manual</a> to use this bot easily and use all the features.</b>", quote=True, reply_markup=DX, parse_mode='html')
+        await message.reply_text("Please read the Bot's Manual to use this bot easily and use all the features.\n\nhttps://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30", reply_markup=DX)
         return
     data = message.command[1]
     try:
