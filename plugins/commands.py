@@ -18,6 +18,8 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
+DX = InlineKeyboardMarkup([[InlineKeyboardButton('📝Click Here to Read Manual📝', url='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30')]])
+
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
@@ -57,6 +59,7 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+        await message.reply_text("<b>Please read the <a href="https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30">Bot's Manual</a> to use this bot easily and use all the features.</b>", quote=True, reply_markup=DX, parse_mode='html') 
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
@@ -100,6 +103,7 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+        await message.reply_text("<b>Please read the <a href="https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30">Bot's Manual</a> to use this bot easily and use all the features.</b>", quote=True, reply_markup=DX, parse_mode='html')
         return
     data = message.command[1]
     try:
