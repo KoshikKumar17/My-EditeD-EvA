@@ -5,7 +5,7 @@ from requests.utils import requote_uri
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-API = "https://zenquotes.io/api/"
+PU = "https://zenquotes.io/api/"
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('✨ ❤️ 😇 OWNER 😇 ❤️ ✨', url='https://t.me/KoshikKumar17')]])
 
@@ -22,7 +22,7 @@ async def getquote(bot, update):
 
 def getquote(type):
     try:
-        r = requests.get(API + requote_uri(type.lower()))
+        r = requests.get(PU + requote_uri(type.lower()))
         info = r.json()
         qt = info['q']
         athr = info['a']
