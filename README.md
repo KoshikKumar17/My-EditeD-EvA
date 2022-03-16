@@ -9,7 +9,7 @@
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/KoshikKumar17/My-EditeD-EvA)   
 [![Contributors](https://img.shields.io/github/contributors/KoshikKumar17/My-EditeD-EvA?style=flat-square&color=green)](https://github.com/KoshikKumar17/My-EditeD-EvA)
 [![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/KoshikKumar17/My-EditeD-EvA/blob/main/LICENSE)
-[![Sparkline](https://stars.medv.io/KoshikKumar17/My-EditeD-EvA)   )
+[![Sparkline](https://stars.medv.io/KoshikKumar17/My-EditeD-EvA)
 
 
 ## Features
