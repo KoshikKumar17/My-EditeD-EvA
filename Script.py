@@ -24,12 +24,7 @@ You can use any of them by using:- <code>/quote</code> {tag.name}
 <b>❗❗ This will give you a Quote of that category. ❗❗</b>
 
 <b>TAGS:</b>
-<code>business</code> <code>education</code> <code>faith</code> <code> </code>  
-<code>famous-quotes</code> <code>friendship</code> <code>future</code> <code>happiness</code>  
-<code>history</code> <code>inspirational</code> <code>life</code> <code>literature</code> 
-<code>love</code> <code>nature</code> <code>politics</code> <code>proverb</code>
-<code>religion</code> <code>science</code> <code>success</code> <code>technology</code>
-<code>wisdom</code>"""
+<code>business</code>, <code>education</code>, <code>faith</code>, <code>famous-quotes</code>, <code>friendship</code>, <code>future</code>, <code>happiness</code>, <code>history</code>, <code>inspirational</code>, <code>life</code>, <code>literature</code>, <code>love</code>, <code>nature</code>, <code>politics</code>, <code>proverb</code>, <code>religion</code>, <code>science</code>, <code>success</code>, <code>technology</code>, <code>wisdom</code>"""
     GETSTICKER_TXT = """<b>Hey Bro👋,
 
 Choose an Emoji😜 of your choice from Below.</b>
