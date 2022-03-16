@@ -10,9 +10,10 @@
 [![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/KoshikKumar17/My-EditeD-EvA/blob/main/LICENSE)
 
 ## First Thanks and Credits
-As you know this is an imported repo from EvaMaria. So First Let me thank those developers who made the beautiful and awesome base Repo Evamaria. Also those from where I learnt some coding.
+As you know this is an *imported repo* from *EvaMaria.* So First Let me *thank* those *developers* who made the beautiful and awesome *base Repo* Evamaria. Also those from where *I learnt some coding*.
 That's All. 
---NO CREDITS TO ME--
+
+*--NO CREDITS TO ME--*
 - [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
 
 ## Features
