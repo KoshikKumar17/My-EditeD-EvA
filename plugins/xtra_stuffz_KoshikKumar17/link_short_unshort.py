@@ -62,11 +62,10 @@ def longlink(type):
         rerl = info['resolved_url']
         longlink = f"""**Your Link Un-ShorTeNed **
 
-**Short link**:- {rqrl}\n
-**Long Link**:- {rerl}
+**Short Url **:- {rqrl}\n
+**Long ** {rerl}
 
-
-**@KoshikKumar17 ❤️**"""
+\n**•| @KoshikKumar17 |•**"""
         return longlink
     except Exception as error:
         return error
