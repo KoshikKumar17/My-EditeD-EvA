@@ -6,7 +6,7 @@ from pyrogram import Client as Koshik
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-PX = "https://programming-quotes-api.herokuapp.com/quotes/"
+PX = "https://programming-quotes-api.herokuapp.com/"
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️ Made by 🙋‍♂️', url='https://t.me/KoshikKumar17')]])
 
