@@ -444,7 +444,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await query.answer('🙂Fetching Info About this Bot✨')
+        await query.answer('Hehe ✨')
     elif query.data == "changelogs":
         buttons= [[
             InlineKeyboardButton('⬅️ Back', callback_data='about1')
