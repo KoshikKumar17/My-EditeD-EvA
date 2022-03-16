@@ -7,6 +7,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API = "https://short-link-api.vercel.app/?query="
+IPA = "https://unshorten.me/json/"
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('✨ ❤️ 😁 Made By 😁 ❤️ ✨', url='https://t.me/KoshikKumar17')]])
 
@@ -39,5 +40,33 @@ def shortlink(type):
 **TTMSH:-** {ttm}\n
 \n**•| @KoshikKumar17 |•**"""
         return shortlink
+    except Exception as error:
+        return error
+
+@Koshik.on_message(filters.command("unshort"))
+async def linkextender(bot, update):
+    koshik = await update.reply_text("**Un-Shorting your link....👤\n\nPlease wait a bit..🙃**",quote=True)
+    query = update.text.split(None, 1)[1]
+    reply_markup = BUTTONS
+    await koshik.edit_text(
+        text=longlink(query),
+        disable_web_page_preview=True,
+        reply_markup=reply_markup
+    )
+
+def longlink(type):
+    try:
+        r = requests.get(IPA + requote_uri(type.lower()))
+        info = r.json()
+        rqrl = info['requested_url']
+        rerl = info['resolved_url']
+        longlink = f"""**Your Link Un-ShorTeNed **
+
+**Short link**:- {rqrl}\n
+**Long Link**:- {rerl}
+
+
+**@KoshikKumar17 ❤️**"""
+        return longlink
     except Exception as error:
         return error
