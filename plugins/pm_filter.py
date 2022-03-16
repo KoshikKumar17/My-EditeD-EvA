@@ -434,6 +434,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
         await query.answer('🙂Fetching Info About this Bot✨')
+    elif query.data == "qtstags":
+        buttons= [[
+            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+               ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.reply_text(
+            text=script.QUOTES_TAGS,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+        await query.answer('🙂Fetching Info About this Bot✨')
     elif query.data == "changelogs":
         buttons= [[
             InlineKeyboardButton('⬅️ Back', callback_data='about1')
