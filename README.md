@@ -2,15 +2,18 @@
   <b><a href="https://telegram.me/mybotkk_17bot">KoshikKumar17'S Bot</a></b>
 </h1>
 
-
 [![Stars](https://img.shields.io/github/stars/KoshikKumar17/My-EditeD-EvA?style=flat-square&color=yellow)](https://github.com/KoshikKumar17/My-EditeD-EvA/stargazers)
 [![Forks](https://img.shields.io/github/forks/KoshikKumar17/My-EditeD-EvA?style=flat-square&color=orange)](https://github.com/KoshikKumar17/My-EditeD-EvA/fork)
 [![Size](https://img.shields.io/github/repo-size/KoshikKumar17/My-EditeD-EvA?style=flat-square&color=green)](https://github.com/KoshikKumar17/My-EditeD-EvA)   
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/KoshikKumar17/My-EditeD-EvA)   
 [![Contributors](https://img.shields.io/github/contributors/KoshikKumar17/My-EditeD-EvA?style=flat-square&color=green)](https://github.com/KoshikKumar17/My-EditeD-EvA)
 [![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/KoshikKumar17/My-EditeD-EvA/blob/main/LICENSE)
-[![Sparkline](https://stars.medv.io/KoshikKumar17/My-EditeD-EvA)
 
+## First Thanks and Credits
+As you know this is an imported repo from EvaMaria. So First Let me thank those developers who made the beautiful and awesome base Repo Evamaria. Also those from where I learnt some coding.
+That's All. 
+--NO CREDITS TO ME--
+- [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
 
 ## Features
 
@@ -115,16 +118,6 @@ python3 bot.py
 ## Support
 [![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://telegram.dog/EvaMariaSupport)
 [![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/TeamEvamaria)
-
-## Credits 
-* [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
-
-
-## Thanks to 
- - Thanks To Dan For His Awesome [Library](https://github.com/pyrogram/pyrogram)
- - Thanks To Mahesh For His Awesome [Media-Search-bot](https://github.com/Mahesh0253/Media-Search-bot)
- - Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome [Unlimited Filter Bot](https://github.com/TroJanzHEX/Unlimited-Filter-Bot) And [AutoFilterBoT](https://github.com/trojanzhex/auto-filter-bot)
- - Thanks To All Everyone In This Journey
 
 ### Note
 
