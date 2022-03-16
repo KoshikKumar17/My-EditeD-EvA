@@ -1,5 +1,5 @@
 <h1 align="center">
-  <b><a href="https://telegram.me/mybotkk_17bot">KoshikKumar17'S Bot</a></b>
+  <b><a href="https://telegram.me/MyBotKK_17Bot">KoshikKumar17'S Bot</a></b>
 </h1>
 
 [![Stars](https://img.shields.io/github/stars/KoshikKumar17/My-EditeD-EvA?style=flat-square&color=yellow)](https://github.com/KoshikKumar17/My-EditeD-EvA/stargazers)
@@ -16,6 +16,17 @@ That's All.
 **--NO CREDITS TO ME--**
 
 - [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
+ - Thanks To Dan For His Awesome [Library](https://github.com/pyrogram/pyrogram)
+ - Thanks To Mahesh For His Awesome [Media-Search-bot](https://github.com/Mahesh0253/Media-Search-bot)
+ - Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome [Unlimited Filter Bot](https://github.com/TroJanzHEX/Unlimited-Filter-Bot) And [AutoFilterBoT](https://github.com/trojanzhex/auto-filter-bot)
+ - Thanks to [SpEcHiDe](https://t.me/SpEcHlDe) for Inspiration
+ - Thanks to SV443 for Joke api
+ - Thanks to Game of Thrones for Quotes Api
+ - Thanks Trojanz for Heroku dyno status inspiration.
+ - Thanks to Sirius nd Pradeep
+ - Thanks to [PyPI](https://PyPI.org) for stuffs.
+ - Thanks To All Everyone In This Journey
+
 
 ## Features
 
