@@ -5,28 +5,30 @@ from requests.utils import requote_uri
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-PX = "https://game-of-thrones-quotes.herokuapp.com/v1/"
+PX = "https://api.quotable.io/random?tags="
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️ Made by 🙋‍♂️', url='https://t.me/KoshikKumar17')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️ Made by 🙋‍♂️', url='https://t.me/KoshikKumar17')],[InlineKeyboardButton('List All Types of Quote Tags', callback_data='qtstags')]])
 
-@Client.on_message(filters.command("thought"))
-async def get_thought(bot, update):
+@Client.on_message(filters.command("quote"))
+async def get_quote(bot, update):
     koshik = await update.reply_text("**I Am Processing...😇**")
     query = update.text.split(None, 1)[1]
     reply_markup = BUTTONS
     await koshik.edit_text(
-        text=gett_tht(query),
+        text=gett_qt(query),
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )
 
-def gett_tht(type):
+def gett_qt(type):
     try:
         r = requests.get(PX + requote_uri(type.lower()))
         info = r.json()
-        thought = info['sentence']
-        gett_tht = f"""**{thought}**
-\n **@KoshikKumar17**"""
-        return gett_tht
+        qt = info['content']
+        athr = info['author']
+        tgs = info['tags']
+        gett_qt = f"""**{qt}**\n                  - __{athr}__\n\nCategory:- {tgs}
+\n **@KoshikKumar17** ❤️"""
+        return gett_qt
     except Exception as error:
         return error
