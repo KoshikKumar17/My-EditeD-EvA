@@ -11,13 +11,11 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️ Made by �
 
 @Client.on_message(filters.command("quote"))
 async def get_quote(bot, update):
-    koshik = await update.reply_text("**I Am Processing...😇**")
+    koshik = await update.reply_text("**I Am Processing...😇**",quote=True,reply_markup=BUTTONS)
     query = update.text.split(None, 1)[1]
-    reply_markup = BUTTONS
     await koshik.edit_text(
         text=gett_qt(query),
-        disable_web_page_preview=True,
-        reply_markup=reply_markup
+        disable_web_page_preview=True
     )
 
 def gett_qt(type):
