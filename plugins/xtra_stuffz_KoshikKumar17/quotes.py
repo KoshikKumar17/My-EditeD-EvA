@@ -15,7 +15,8 @@ async def get_quote(bot, update):
     query = update.text.split(None, 1)[1]
     await koshik.edit_text(
         text=gett_qt(query),
-        disable_web_page_preview=True
+        disable_web_page_preview=True,
+        reply_markup = BUTTONS
     )
 
 def gett_qt(type):
