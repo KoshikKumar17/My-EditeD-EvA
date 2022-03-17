@@ -4,9 +4,10 @@ import requests
 from pyrogram import Client, filters
 
 @Client.on_message(filters.command("inspire"))
-def inspireme(update,context):
-    bot = context.bot
-    url = r"http://inspirobot.me/api?generate=true"
+async def inspireme(bot, update):
+    s = await update.reply_text("Processing...⏳",quote=True)
+    url = "http://inspirobot.me/api?generate=true"
     get = requests.get(url)
     img = get.text
-    bot.sendPhoto(chat_id=update.effective_chat.id, photo=img, caption="Inspire me again!")
+    await bot.reply_photo(photo=img, caption="Inspire me again!")
+    await s.delete()
