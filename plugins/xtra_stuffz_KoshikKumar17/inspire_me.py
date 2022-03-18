@@ -3,7 +3,7 @@
 import requests
 import pyrogram
 from pyrogram import Client, filters
-from pyrogram import *
+from pyrogram import InlineKeyboardButton InlineKeyboardMarkup
 
 BTN = InlineKeyboardMarkup([[InlineKeyboardButton('💡 Source 💡', url='tg://openmessage?user_id=1857338892')],[InlineKeyboardButton('Inspire Me Again!!', callback_data='inspireagain')]])
 
@@ -18,11 +18,11 @@ async def inspireme(bot, update):
 
 @Client.on_callback_query(filters.regex(r'^inspireagain'))
 async def inspiremecallbak(bot, update):
-    s = await update.reply_text("Processing...⏳",quote=True)
+    p = await update.reply_text("Processing...⏳",quote=True)
     await update.answer('Generating.....⏳')
     url = "http://inspirobot.me/api?generate=true"
     get = requests.get(url)
     img = get.text
     await update.reply_photo(photo=img, caption="Inspire me again! © Sirius")
-    await s.delete()
+    await p.delete()
     
