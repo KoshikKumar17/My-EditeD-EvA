@@ -1,6 +1,7 @@
 # Kanged From @TroJanZheX
 import asyncio
 import re
+import requests
 import ast
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
