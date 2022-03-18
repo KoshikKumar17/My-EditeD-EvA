@@ -3,7 +3,7 @@
 import requests
 import pyrogram
 from pyrogram import Client, filters
-from pyrogram import InlineKeyboardButton InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BTN = InlineKeyboardMarkup([[InlineKeyboardButton('💡 Source 💡', url='tg://openmessage?user_id=1857338892')],[InlineKeyboardButton('Inspire Me Again!!', callback_data='inspireagain')]])
 
