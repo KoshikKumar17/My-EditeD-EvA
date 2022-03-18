@@ -28,6 +28,7 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 SPELL_CHECK = {}
+BMW = InlineKeyboardMarkup([[InlineKeyboardButton('💡 Source 💡', url='tg://openmessage?user_id=1857338892')],[InlineKeyboardButton('Inspire Me Again!!', callback_data='inspireagain')]])
 
 
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
@@ -443,6 +444,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.QUOTES_TAGS,
             reply_markup=reply_markup,
             parse_mode='html'
+        )
+        await query.answer('Hehe ✨')
+    elif query.data == "inspireagain":
+        url = "http://inspirobot.me/api?generate=true"
+        get = requests.get(url)
+        img = get.text
+        await query.message.reply_photo(
+            photo=img,
+            caption="Inspire me again! © Sirius",
+            reply_markup=BMW
         )
         await query.answer('Hehe ✨')
     elif query.data == "changelogs":
