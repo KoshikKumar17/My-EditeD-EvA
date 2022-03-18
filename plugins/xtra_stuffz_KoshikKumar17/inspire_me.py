@@ -19,10 +19,8 @@ async def inspireme(bot, update):
 @Client.on_callback_query(filters.regex(r'^inspireagain'))
 async def inspiremecallbak(bot, update):
     p = await update.reply_text("Processing...⏳",quote=True)
-    await update.answer('Generating.....⏳')
     url = "http://inspirobot.me/api?generate=true"
     get = requests.get(url)
     img = get.text
     await update.reply_photo(photo=img, caption="Inspire me again! © Sirius")
     await p.delete()
-    
