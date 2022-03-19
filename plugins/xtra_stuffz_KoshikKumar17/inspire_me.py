@@ -13,5 +13,5 @@ async def inspireme(bot, update):
     url = "http://inspirobot.me/api?generate=true"
     get = requests.get(url)
     img = get.text
-    await update.reply_photo(photo=img, caption="Inspire me again! © Sirius", reply_markup=BTN)
+    await update.reply_photo(photo=img, caption="Inspire me again! © Sirius", reply_markup=BTN, quote=True)
     await s.delete()
