@@ -448,6 +448,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.answer('Hehe ✨')
     elif query.data == "inspireagain":
+        k = await query.message.reply_text("**Processing...⏳**")
         url = "http://inspirobot.me/api?generate=true"
         get = requests.get(url)
         img = get.text
@@ -456,6 +457,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             caption="Inspire me again! © Sirius",
             reply_markup=BMW
         )
+        await k.delete()
         await query.answer('Hehe ✨')
     elif query.data == "changelogs":
         buttons= [[
