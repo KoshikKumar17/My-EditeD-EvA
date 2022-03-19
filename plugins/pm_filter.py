@@ -454,7 +454,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         img = get.text
         await query.message.reply_photo(
             photo=img,
-            quote=True,
             caption="Inspire me again! © Sirius",
             reply_markup=BMW
         )
