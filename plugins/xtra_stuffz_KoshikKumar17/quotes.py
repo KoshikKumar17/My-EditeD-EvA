@@ -30,5 +30,4 @@ def gett_qt(type):
 \n **@KoshikKumar17** ❤️"""
         return gett_qt
     except Exception as error:
-        await koshik.edit_text(str(e))
         return error
