@@ -5,8 +5,6 @@ import json
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-API = "https://v2.jokeapi.dev/joke/Any?type="
-
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️Father🙋‍♂️', url='https://t.me/KoshikKumar17')]])
 
 @Client.on_message(filters.command("joke"))
