@@ -39,7 +39,7 @@ async def findsticker(bot, message):
           await txt.delete()
           await bot.send_sticker(chat_id,f"{stickerid}")
        else:
-          await txt.edit_text("**__Please reply to a ID to get its STICKER.__**")
+          await message.reply_text("**__Please reply to a ID to get its STICKER.__**")
   except Exception as error:
-          await txt.edit_text(str(error))
+          await message.reply_text(str(error))
           
