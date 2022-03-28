@@ -26,6 +26,7 @@ def time_to_seconds(time):
 
 @Client.on_message(filters.command(["song", "music", "mp3"]) & ~filters.channel & ~filters.edited)
 def a(client, message: Message):
+    await client.send_chat_action(message.chat.id, "typing")
     urlissed = get_text(message)
     query = ''
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
@@ -82,6 +83,7 @@ def a(client, message: Message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
+        await client.send_chat_action(message.chat.id, "upload_audio")
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',reply_to_message_id=reply_id, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
@@ -236,6 +238,7 @@ def time_to_seconds(time):
 
 @Client.on_message(filters.command(["vsong", "video", "mp4"]))
 async def vsong(client, message: Message):
+    await client.send_chat_action(message.chat.id, "typing")
     urlissed = get_text(message)
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
 
@@ -282,6 +285,7 @@ async def vsong(client, message: Message):
 
 **@KoshikKumar17**
 """
+    await client.send_chat_action(message.chat.id, "upload_video")
     await client.send_video(
         message.chat.id, reply_to_message_id=reply_id,
         video=open(file_stark, "rb"),
