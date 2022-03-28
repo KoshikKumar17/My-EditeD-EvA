@@ -11,6 +11,7 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️ Made by �
 
 @Client.on_message(filters.command("quote"))
 async def get_quote(bot, update):
+    await update.reply_chat_action("typing")
     koshik = await update.reply_text("**I Am Processing...😇**",quote=True,reply_markup=BUTTONS)
     query = update.text.split(None, 1)[1]
     await koshik.edit_text(
