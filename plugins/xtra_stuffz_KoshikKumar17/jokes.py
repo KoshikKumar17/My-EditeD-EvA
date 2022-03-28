@@ -9,6 +9,7 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️Father🙋�
 
 @Client.on_message(filters.command("joke"))
 async def jokeapibot(bot, update):
+    await update.reply_chat_action("typing")
     koshik = await update.reply_text("Getting a Joke...😂")
     px = "https://v2.jokeapi.dev/joke/Any?type=single"
     request = requests.get(px)
