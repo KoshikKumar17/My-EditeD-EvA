@@ -24,6 +24,7 @@ async def help_me(_, message):
 async def stickerid(bot, message):
     p = await message.reply_text("**Processing...⏳**",quote=True)   
     if message.reply_to_message.sticker:
+       await message.reply_chat_action("typing")
        await p.edit(f"**Sticker ID is**  \n `{message.reply_to_message.sticker.file_id}` \n \n ** Unique ID is ** \n\n`{message.reply_to_message.sticker.file_unique_id}`\n \n**@KoshikKumar17**")
     else: 
        await p.edit("Oops !! Not a sticker file")
@@ -37,6 +38,7 @@ async def findsticker(bot, message):
           stickerid = str(message.reply_to_message.text)
           chat_id = str(message.chat.id)
           await txt.delete()
+          await update.reply_chat_action("choose_sticker")
           await bot.send_sticker(chat_id,f"{stickerid}")
        else:
           await message.reply_text("**__Please reply to a ID to get its STICKER.__**")
