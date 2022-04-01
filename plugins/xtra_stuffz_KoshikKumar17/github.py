@@ -11,9 +11,10 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖🇮🇳✨ Made By ✨🇮🇳💖', url='https://t.me/KoshikKumar17')]])
 A = """{} with user id:- {} used /git command."""
 
-@Koshik.on_message(filters.command("github", "git"))
+@Koshik.on_message(filters.command(["github", "git"]))
 async def getgithub(bot, message):
     await update.reply_chat_action("typing")
+    k = await message.reply_text("**Processing...⏳**")
     un = message.text.split(None, 1)[1]
     URL = f'https://api.github.com/users/{un}'
     request = requests.get(URL)
@@ -47,4 +48,5 @@ async def getgithub(bot, message):
         print(str(e))
         pass
     await message.reply_photo(photo=avatar_url, caption=caption, reply_markup=BUTTONS)
+    await k.delete()
     await bot.send_message(LOG_CHANNEL, A.format(update.from_user.mention, update.from_user.id))
