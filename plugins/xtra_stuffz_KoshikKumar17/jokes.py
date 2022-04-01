@@ -7,6 +7,8 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️Father🙋‍♂️', url='https://t.me/KoshikKumar17')]])
+A = """Hi, {} with user id:- {} used /joke command."""
+
 
 @Client.on_message(filters.command("joke"))
 async def jokeapibot(bot, update):
@@ -19,7 +21,7 @@ async def jokeapibot(bot, update):
     gett_joke = f"""
 😁Here is Your Joke😁 :\n \n **{joke}**
 \nWith ❤️ by @KoshikKumar17"""
-    await bot.send_message(LOG_CHANNEL, "hi {update.from_user.mention} with id:- {update.from_user.id} used /joke command")
+    await bot.send_message(LOG_CHANNEL, A.format(update.from_user.mention, update.from_user.id))
     await koshik.edit_text(
         text=gett_joke,
         reply_markup=BUTTONS,
