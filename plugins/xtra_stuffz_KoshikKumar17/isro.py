@@ -35,6 +35,6 @@ async def getgithub(bot, message):
     request = requests.get(URL)
     result = request.json()
     data = await fetch_json(result)
-    await update.reply_text(text=data, reply_markup=BUTTONS)
+    await message.reply_text(text=data, reply_markup=BUTTONS)
     await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id)) 
     await k.dekete()
