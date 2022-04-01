@@ -48,5 +48,5 @@ async def clearcachepdf(bot, message):
         del LIST[message.from_user.id]
         await message.reply_text("`PDF cache/Queue deleted Successfully..`🤧", quote=True)
         shutil.rmtree(f"{message.chat.id}")
-    except Exception:
-        await message.reply_text("`No Queue founded..`😲", quote=True)
+    except Exception as e
+        await message.reply_text(str(e))
