@@ -2,6 +2,7 @@
 import os
 import requests
 import json
+from utils import LOG_CHANNEL
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -23,4 +24,4 @@ async def jokeapibot(bot, update):
         reply_markup=BUTTONS,
         disable_web_page_preview=True
    )
-    
+await bot.send_message(LOG_CHANNEL, {update.from_user.mention} with id:- {update.from_user.id} used /joke command)
