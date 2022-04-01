@@ -1,6 +1,7 @@
 # (c) @KoshikKumar17
 import os
 from PIL import Image
+import pyrogram
 from pyrogram import Client,filters 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
@@ -48,5 +49,5 @@ async def clearcachepdf(bot, message):
         del LIST[message.from_user.id]
         await message.reply_text("`PDF cache/Queue deleted Successfully..`🤧", quote=True)
         shutil.rmtree(f"{message.chat.id}")
-    except Exception as error
-        await message.reply_text(str(error))
+    except Exception
+        await message.reply_text("No queue found")
