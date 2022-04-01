@@ -1,6 +1,7 @@
 # (c) @KoshikKumar17
 import os
 import requests
+import pyrogram
 import json
 from info import LOG_CHANNEL
 from pyrogram import Client as Koshik
