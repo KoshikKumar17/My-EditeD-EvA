@@ -1,9 +1,12 @@
 from googletrans import Translator
 from pyrogram import Client, filters
+from info import LOG_CHANNEL
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from plugins.list import list
 
-@Client.on_message(filters.command(["tr"]))
+A = """Hi, {} with user id:- {} used /tr command."""
+
+@Client.on_message(filters.command(["tr", "translate"]))
 async def left(client,message):
 	if (message.reply_to_message):
 		try:
@@ -35,7 +38,8 @@ async def left(client,message):
 				await message.reply(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
 			except:
 			   	await message.reply(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
-			
+			        await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id))
+
 		except :
 			print("error")
 	else:
