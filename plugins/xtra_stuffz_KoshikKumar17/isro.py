@@ -9,9 +9,9 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖🇮🇳✨ Made By ✨🇮🇳💖', url='https://t.me/KoshikKumar17')]])
-A = """{} with user id:- {} used /git command."""
+A = """{} with user id:- {} used /isro command."""
 
-async def json_prettify(data):
+async def fetch_json(data):
     output = ""
     try:
         for key, value in data.items():
@@ -34,4 +34,7 @@ async def getgithub(bot, message):
     URL = f'https://isro.vercel.app/api/{query}'
     request = requests.get(URL)
     result = request.json()
-    data = await json_prettify(result)
+    data = await fetch_json(result)
+    await update.reply_text(text=data, reply_markup=BUTTONS)
+    await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id)) 
+    await k.dekete()
