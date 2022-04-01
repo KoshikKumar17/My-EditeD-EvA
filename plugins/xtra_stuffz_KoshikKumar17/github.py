@@ -14,7 +14,7 @@ A = """{} with user id:- {} used /git command."""
 @Koshik.on_message(filters.command(["github", "git"]))
 async def getgithub(bot, message):
     if len(message.command) != 2:
-        await message.reply_text("/git Username")
+        await message.reply_text("/github Username \n\n Like:- `/github hkrrish`", quote=True)
         return
     await message.reply_chat_action("typing")
     k = await message.reply_text("**Processing...⏳**", quote=True)    
