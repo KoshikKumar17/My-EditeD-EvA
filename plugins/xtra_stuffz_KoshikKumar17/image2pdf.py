@@ -22,7 +22,7 @@ async def pdf(client,message):
  image = Image.open(file)
  img = image.convert('RGB')
  LIST[message.from_user.id].append(img)
- await ms.edit(f"{len(LIST[message.from_user.id])} image **Successfully created PDF**. If you want to add more image, Send me **One by One**\n\n If done **click** here 👉 __/c2pdf__")
+ await ms.edit(f"{len(LIST[message.from_user.id])} image **Successfully created PDF**. You have 3 options:-\n\n 1.If you want to add more image, Send me **One by One**\n2.If done **click** here 👉 __/c2pdf__\n3. If you want to cancel/clear this list **Click** 👉 __/clearpdfcache__")
  
 
 @Client.on_message(filters.command(['c2pdf']))
@@ -40,3 +40,13 @@ async def done(client,message):
  
  await client.send_document(message.from_user.id, open(path, "rb"), caption = "Heya!! Here your PDF !!")
  os.remove(path)
+
+@Client.on_message(filters.command(["clearpdfcache"]))
+async def clearcachepdf(bot, message):
+    try:
+        await message.reply_chat_action("typing")
+        del LIST[message.from_user.id]
+        await message.reply_text("`PDF cache/Queue deleted Successfully..`🤧", quote=True)
+        shutil.rmtree(f"{message.chat.id}")
+    except Exception:
+        await message.reply_text("`No Queue founded..`😲", quote=True)
