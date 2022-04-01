@@ -38,7 +38,7 @@ async def findsticker(bot, message):
           stickerid = str(message.reply_to_message.text)
           chat_id = str(message.chat.id)
           await txt.delete()
-          await update.reply_chat_action("choose_sticker")
+          await message.reply_chat_action("choose_sticker")
           await bot.send_sticker(chat_id,f"{stickerid}")
        else:
           await message.reply_text("**__Please reply to a ID to get its STICKER.__**")
