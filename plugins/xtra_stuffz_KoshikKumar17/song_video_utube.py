@@ -83,7 +83,7 @@ def a(client, message: Message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        await client.send_chat_action(message.chat.id, "upload_audio")
+        client.send_chat_action(message.chat.id, "upload_audio")
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',reply_to_message_id=reply_id, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
