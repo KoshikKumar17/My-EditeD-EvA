@@ -3,15 +3,14 @@ import os
 import requests
 import json
 from info import LOG_CHANNEL
-from pyrogram import Client, filters
+from pyrogram import Client as Koshik
+from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖🇮🇳✨ Made By ✨🇮🇳💖', url='https://t.me/KoshikKumar17')]])
 A = """{} with user id:- {} used /git command."""
 
-
-
-@Client.on_message(filters.command("github")
+@Koshik.on_message(filters.command("github", "git")
 async def getgithub(bot, message):
     await update.reply_chat_action("typing")
     un = message.text.split(None, 1)[1]
