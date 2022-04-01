@@ -15,6 +15,7 @@ A = """{} with user id:- {} used /git command."""
 async def getgithub(bot, message):
     await message.reply_chat_action("typing")
     k = await message.reply_text("**Processing...⏳**")
+ try:    
     un = message.text.split(None, 1)[1]
     URL = f'https://api.github.com/users/{un}'
     request = requests.get(URL)
@@ -45,5 +46,5 @@ async def getgithub(bot, message):
 
 **@KoshikKumar17**"""
     await message.reply_photo(photo=avatar_url, caption=capy, reply_markup=BUTTONS)
-    await k.delete()
     await bot.send_message(LOG_CHANNEL, A.format(update.from_user.mention, update.from_user.id))
+    await k.delete()
