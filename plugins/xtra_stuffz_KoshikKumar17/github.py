@@ -19,6 +19,7 @@ async def getgithub(bot, message):
     URL = f'https://api.github.com/users/{un}'
     request = requests.get(URL)
     result = request.json()
+    username = result['login']
     url = result['html_url']
     name = result['name']
     company = result['company']
