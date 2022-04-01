@@ -13,7 +13,7 @@ A = """{} with user id:- {} used /git command."""
 
 @Koshik.on_message(filters.command(["github", "git"]))
 async def getgithub(bot, message):
-    await update.reply_chat_action("typing")
+    await message.reply_chat_action("typing")
     k = await message.reply_text("**Processing...⏳**")
     un = message.text.split(None, 1)[1]
     URL = f'https://api.github.com/users/{un}'
