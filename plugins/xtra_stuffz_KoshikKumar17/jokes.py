@@ -19,7 +19,7 @@ async def jokeapibot(bot, update):
     gett_joke = f"""
 😁Here is Your Joke😁 :\n \n **{joke}**
 \nWith ❤️ by @KoshikKumar17"""
-    await bot.send_message(LOG_CHANNEL, "{update.from_user.mention} with id:- {update.from_user.id} used /joke command")
+    await bot.send_message(LOG_CHANNEL, "hi {update.from_user.mention} with id:- {update.from_user.id} used /joke command")
     await koshik.edit_text(
         text=gett_joke,
         reply_markup=BUTTONS,
