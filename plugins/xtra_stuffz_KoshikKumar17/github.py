@@ -13,6 +13,9 @@ A = """{} with user id:- {} used /git command."""
 
 @Koshik.on_message(filters.command(["github", "git"]))
 async def getgithub(bot, message):
+    if len(message.command) != 2:
+        await message.reply_text("/git Username")
+        return
     await message.reply_chat_action("typing")
     k = await message.reply_text("**Processing...⏳**", quote=True)    
     un = message.text.split(None, 1)[1]
@@ -44,6 +47,6 @@ async def getgithub(bot, message):
 **Following:** `{following}`
 
 **@KoshikKumar17**"""
-    await bot.send_message(LOG_CHANNEL, A.format(update.from_user.mention, update.from_user.id)) 
-    await message.reply_photo(photo=avatar_url, caption=capy, reply_markup=BUTTONS)
+    await message.reply_photo(photo=avatar_url, caption=capy, reply_markup=buttons)
+    await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id)) 
     await k.delete()
