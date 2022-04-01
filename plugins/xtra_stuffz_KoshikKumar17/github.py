@@ -11,7 +11,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖🇮🇳✨ Made By ✨🇮🇳💖', url='https://t.me/KoshikKumar17')]])
 A = """{} with user id:- {} used /git command."""
 
-@Koshik.on_message(filters.command("github", "git")
+@Koshik.on_message(filters.command("github", "git"))
 async def getgithub(bot, message):
     await update.reply_chat_action("typing")
     un = message.text.split(None, 1)[1]
