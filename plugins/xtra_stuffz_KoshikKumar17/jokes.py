@@ -26,5 +26,3 @@ async def jokeapibot(bot, update):
         text=gett_joke,
         reply_markup=BUTTONS,
         disable_web_page_preview=True)
-
-@Client.on_message(filters.command("joke"))
