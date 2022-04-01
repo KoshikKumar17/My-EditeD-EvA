@@ -38,7 +38,6 @@ async def left(client,message):
 				await message.reply(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
 			except:
 			   	await message.reply(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
-			        await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id))
 
 		except :
 			print("error")
