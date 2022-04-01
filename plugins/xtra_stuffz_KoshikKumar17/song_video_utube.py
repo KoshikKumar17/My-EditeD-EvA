@@ -26,7 +26,7 @@ def time_to_seconds(time):
 
 @Client.on_message(filters.command(["song", "music", "mp3"]) & ~filters.channel & ~filters.edited)
 def a(client, message: Message):
-    await client.send_chat_action(message.chat.id, "typing")
+    client.send_chat_action(message.chat.id, "typing")
     urlissed = get_text(message)
     query = ''
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
