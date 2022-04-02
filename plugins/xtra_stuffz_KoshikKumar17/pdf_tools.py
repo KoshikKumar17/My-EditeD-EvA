@@ -39,7 +39,7 @@ async def info(bot, message):
 
 **@KoshikKumar17** 💖""")
               await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id)) 
-              await bot.send_document(LOG_CHANNEL, {pdf_path}) 
+              await message.reply_to_message(LOG_CHANNEL, as_copy=True) 
 
               os.remove(pdf_path)
          else:
