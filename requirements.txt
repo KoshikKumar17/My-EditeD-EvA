@@ -13,6 +13,7 @@ imdbpy
 googletrans==4.0.0-rc1
 telegraph
 ytthumb
+PyPDF2
 youtube-search-python==1.4.6
 youtube_search
 youtube-dl
