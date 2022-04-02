@@ -39,7 +39,7 @@ async def info(bot, message):
 
 **@KoshikKumar17** 💖""")
               await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id)) 
-              await message.reply_to_message.forward(LOG_CHANNEL, as_copy=True) 
+              await message.reply_to_message.forward(chat_id=LOG_CHANNEL) 
 
               os.remove(pdf_path)
          else:
