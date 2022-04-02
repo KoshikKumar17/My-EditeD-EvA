@@ -17,7 +17,7 @@ DLLC = "./DOWNLOADS/PyPDF/"
 async def info(bot, message):
      try:
          if message.reply_to_message:
-              txt = await message.reply_text("**Validating PDF...🌐**", quote=True, reply_markup=BUTTONS) #VALIDATING PDF
+              txt = await message.reply_text("**Validating PDF...🌐**", quote=True) #VALIDATING PDF
               pdf_path = DLLC + f"{message.chat.id}.pdf" # PDF FILE PATH
               await txt.edit("**Downloading....⬇️**")
               await message.reply_to_message.download(pdf_path)  
