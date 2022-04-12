@@ -687,7 +687,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
 
-elif query.data == "img2pdf":
+    elif query.data == "img2pdf":
         buttons= [[
             InlineKeyboardButton('<< Back <<', callback_data='help')
             ]]
