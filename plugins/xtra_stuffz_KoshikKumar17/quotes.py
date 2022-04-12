@@ -13,7 +13,7 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖✨🇮🇳  Made By 
 
 @Client.on_message(filters.command("quote"))
 async def get_quote(bot, message):
-    await update.reply_chat_action("typing")
+    await message.reply_chat_action("typing")
     if len(message.command) != 2:
         await message.reply_text("/quote [quote category] \n\n Like:- `/quote love`", quote=True, reply_markup=BUTTONS)
         return
