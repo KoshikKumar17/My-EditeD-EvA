@@ -482,15 +482,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Auto Filter', callback_data='autofilter')
         ], [
             InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('Extra Mods', callback_data='extra'),
             InlineKeyboardButton('Buttons', callback_data='button1')
         ], [
             InlineKeyboardButton('Text to Speech', callback_data='tts'),
             InlineKeyboardButton('Image to PDF', callback_data='img2pdf')
         ], [
             InlineKeyboardButton('Attach Link', callback_data='attachlink'),
-            InlineKeyboardButton('Telegraph', callback_data='tgraph')
-            InlineKeyboardButton('Github', callback_data='github'),
+            InlineKeyboardButton('Telegraph', callback_data='tgraph'),
+            InlineKeyboardButton('Github', callback_data='github')
         ], [
             InlineKeyboardButton('Bot Status (Heroku)', callback_data='botstatus_hk'),
             InlineKeyboardButton('Google Translator', callback_data='gtrans')
@@ -504,7 +504,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('Share Text', callback_data='shtxt'),
             InlineKeyboardButton('PDF Tools', callback_data='pypdf2'),
-            InlineKeyboardButton('Admin Tools', callback_data='admin1'),
+            InlineKeyboardButton('Admin Tools', callback_data='admin1')
         ], [
             InlineKeyboardButton('Shorten Link', callback_data='shortlink'),
             InlineKeyboardButton('Unshort Link', callback_data='unshortenlink')
