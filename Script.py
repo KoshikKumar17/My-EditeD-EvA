@@ -109,53 +109,70 @@ _hello_ :- will result <i>hello</i>
 .
 <b>Alert Buttons:</b>
 <code>[Button Text](buttonalert:This is an Alert message.)</code>"""
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
+    AUTOFILTER_TXT = """Category: <b>FILTERS: Auto Filter </b>
+..
+Function: <b> In this function, Bot saves all the files in a channel to its DB and whenever a person sends any message in group, Bot will automatically detect the keywords and REPLYs with a message which contains buttons of those files.  ✨😇</b>
+..
+<b>How it Works 🙂?</b>
+.
 <b>NOTE:</b>
 1. Make me the admin of your channel if it's private.
-2. make sure that your channel does not contains camrips, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
-    CONNECTION_TXT = """Help: <b>Connections</b>
+2. Forward the last message to me with quotes.
+ I'll add all the files in that channel to my db.
+“““
+<b>⚠️I DON'T USE THIS FEATURE FOR MY BOT BECAUSE I DON'T HAVE ANY FILES TO SAVE IN IT'S DB.😁 IF I HAVE THEY ARE COPYRIGHTED. ⚠️<b>
+........
+<i><u>This is the Best feature of this Repository. But I don't use. If you want to use this make your Own Bot with  <a href='https://github.com/EvamariaTG/EvaMaria'><b> This Repository </b></a></u></i>
+„„„"""
 
-- Used to connect bot to PM for managing filters 
-- it helps to avoid spamming in groups.
-
+    CONNECTION_TXT = """Category: <b>Connections </b>
+..
+Function: <b>It is used to connect Bot to PM for managing filters. It helps to avoid spamming in groups.✨😜</b>
+..
+<b>How it Works 🙂?</b>
+.....
 <b>NOTE:</b>
 1. Only admins can add a connection.
-2. Send <code>/connect</code> for connecting me to ur PM
+2. Send <code>/connect</code> for connecting me to ur PM.
 
 <b>Commands and Usage:</b>
-• /connect  - <code>connect a particular chat to your PM</code>
-• /disconnect  - <code>disconnect from a chat</code>
-• /connections - <code>list all your connections</code>"""
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
+• /connect  - <code>Connect a particular chat to your PM.</code>
+• /disconnect  - <code>Disconnect from a chat.</code>
+• /connections - <code>List all your connections.</code>"""
 
+    EXTRAMOD_TXT = """Category: <b>Extra Modules </b>
+..
+Function: <b>These are the Extra features of this Bot. These features are not added by Me . These features are inherited from <a href='https://github.com/EvamariaTG/EvaMaria'><b> • Base Repository </b></a> ✨😅</b>
+..
+<b>How it Works 🙂?</b>
 <b>NOTE:</b>
-these are the extra features of Eva Maria
-
+These are the Extra features of this Bot from <a href='https://github.com/EvamariaTG/EvaMaria'><b> • Base Repository </b></a>
+...
 <b>Commands and Usage:</b>
-• /id - <code>get id of a specified user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
-    ADMIN_TXT = """Help: <b>Admin mods</b>
+• /id - <code>Get id of a specified user.</code> /id [id/username/reply]
+• /info  - <code>Get information about a user.</code> OR /info [id/username/reply]
+• /imdb  - <code>get the film information from IMDb source.</code> /imdb pushpa
+• /search  - <code>get the film information from various sources.</code> /search pushpa"""
 
-<b>NOTE:</b>
-This module only works for my admins
-
+    ADMIN_TXT = """Category: <b>ADMIN Modules </b>
+..
+Function: <b>These are the COMMANDS only for ADMINS. Those whom I have added as Bot's ADMINS in heroku vars. ✨😅</b>
+..
+<b>How it Works 🙂?</b>
+..
 <b>Commands and Usage:</b>
-• /logs - <code>to get the rescent errors</code>
-• /stats - <code>to get status of files in db.</code>
-• /delete - <code>to delete a specific file from db.</code>
-• /users - <code>to get list of my users and ids.</code>
-• /chats - <code>to get list of the my chats and ids </code>
-• /leave  - <code>to leave from a chat.</code>
-• /disable  -  <code>do disable a chat.</code>
-• /ban  - <code>to ban a user.</code>
-• /unban  - <code>to unban a user.</code>
-• /channel - <code>to get list of total connected channels</code>
-• /broadcast - <code>to broadcast a message to all users</code>"""
+• /logs - <code>To get the rescent errors</code>
+• /stats - <code>To get status of files in db.</code>
+• /delete - <code>To delete a specific file from db.</code>
+• /users - <code>To get list of my users and ids.</code>
+• /chats - <code>To get list of the my chats and ids </code>
+• /leave  - <code>To leave from a chat.</code>
+• /disable  -  <code>To disable a chat.</code>
+• /ban  - <code>To ban a user.</code>
+• /unban  - <code>Tk unban a user.</code>
+• /channel - <code>To get list of total connected channels</code>
+• /broadcast - <code>To broadcast a message to all users.</code>"""
     STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
