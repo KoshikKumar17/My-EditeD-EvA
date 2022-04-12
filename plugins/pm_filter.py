@@ -516,7 +516,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎵 Song DL 🎵 ', callback_data='songdl'),
             InlineKeyboardButton('💌 Report 💌 ', callback_data='reportme')
         ], [
-            InlineKeyboardButton('💙 DISCLAIMER 💙, callback_data='disclaimer')
+            InlineKeyboardButton('💙 DISCLAIMER 💙', callback_data='disclaimer')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
