@@ -1,36 +1,25 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
+    START_TXT = """Hello {} 👋,
+My Name is <a href=https://t.me/{}>{}</a>, I am a RoBot which can Help you to simplify your life with Telegram With <b>Multiple Features.</b>
+CLICK on the Help button below know more what I can do with You.
+...... 💙
+<i> 🤘Don't forget to give your opinion by /report .</i> <u>You can report Bugs, Features or suggestions or Anything you want.😉. It will help me..!</u>"""
+
     ABOUT1_TXT = """<b>Hey😉,
-✯ 🙄𝙻𝙸𝙱𝚁𝙰𝚁𝚈: <a href='https://docs.pyrogram.org'> ᴘʏʀᴏɢʀᴀᴍ </a>
-
-✯ 😛𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: <a href='https://python.org'> ᴘʏᴛʜᴏɴ 𝟹.8.7 </a>
-
-✯ 😉𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: <a href='https://mongodb.com'> ᴍᴏɴɢᴏᴅʙ </a>
-
-✯ 😊𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: <a href='https://heroku.com'> 𝙷𝙴𝚁𝙾𝙺𝚄 </a>
-
-✯ 🙋‍♂️𝙱𝙾𝚃 FATHER: <a href='tg://user?id=1162032262'> @KoshikKumar17 </a>
-
+✯ 🙄 Library: <a href='https://docs.pyrogram.org'> Pyrogram 1.3.6 </a>
+✯ 😛 Language: <a href='https://python.org'> Python 3.8.7 </a>
+✯ 😉 Database: <a href='https://mongodb.com'> MongoDB </a>
+✯ 😊Bot Server: <a href='https://heroku.com'> Heroku (Free) </a>
+✯ 🙋‍♂️Made By: <a href='tg://user?id=1162032262'> @KoshikKumar17 </a>
 ✯ 😝 Thanks to: @TeamEvaMaria
+✯ Build Version: v2.5.1 [ Major ]"""
 
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.5.0 [ Major ]
-
- Commands👇🏻             Changelogs👇🏻</b>"""
     QUOTES_TAGS = """Hehe..,
-<b>Here are the Supported tags:-</b>
+<b>Here are the Supported categories of quotes:-</b>
 You can use any of them by using:- <code>/quote</code> {tag.name}
-
 <b>❗❗ This will give you a Quote of that category. ❗❗</b>
-
-<b>TAGS:</b>
+<b>CATEGORIES:</b>
 <code>business</code>, <code>education</code>, <code>faith</code>, <code>famous-quotes</code>, <code>friendship</code>, <code>future</code>, <code>happiness</code>, <code>history</code>, <code>inspirational</code>, <code>life</code>, <code>literature</code>, <code>love</code>, <code>nature</code>, <code>politics</code>, <code>proverb</code>, <code>religion</code>, <code>science</code>, <code>success</code>, <code>technology</code>, <code>wisdom</code>"""
-    GETSTICKER_TXT = """<b>Hey Bro👋,
-
-Choose an Emoji😜 of your choice from Below.</b>
-
-<i>Currently only these supported.. 
-I will add more soon...</i>"""
 
     REVIEW_TXT = """Hey Friends 👋,
 
@@ -40,70 +29,86 @@ Tell me your <b>opinion</b> about this bot😉
 
 If you want to request any bugs or features comment here😉</b>
 """
-    ABOUTT_TEXT = """Hey,
 
-Click <b>below Button👇🏻</b> to know about this bot."""
     CHANGELOGS_TXT = """Hey.,🙂
 <b>Here is the Changelogs of the Latest Update
-Date:- 17th February 2022 > 09:00AM IST 🇮🇳
+Date:- 14th April 2022 IST 🇮🇳
+B.R. Ambedkar Jayanti Special 🙏🏻...
+Thanks a lot to Father of Our Constitution 😊👍🇮🇳
 Changelogs:-</b>
 
-<i>--> Added New commands /video , /song , .runs , /tts , /joke single .
+<i>--> updated Whole Ui
 --> Bot Updated .
 --> Some Bugs Fixed .
 --> Added many new things.
----> Click Menu in below left corner for more😂</i>
-
-I can't tell more here. Please <a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'> CLICK_HERE </a> to get detailed information...
-<b>For bugs hit /review ...
-
+---> Click /start to know more</i>
+.
+<b>For bugs hit /report ...
+.
 Thanks❤️,
 @KoshikKumar17</b>"""
-    COMMANDS1_TXT = """<b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
-<a href='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'> 𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄 </a> ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ..."""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/TeamEvamaria>Team Eva Maria</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.5.0 [ 𝙱𝙴𝚃𝙰 ]"""
-    SOURCE_TXT = """<b>NOTE:</b>
-- Eva Maria is a open source project. 
-- Source - https://github.com/EvamariaTG/EvaMaria  
 
-<b>DEVS:</b>
-- <a href=https://t.me/TeamEvamaria>Team Eva Maria</a>"""
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
+    HELP_TXT = """<b>Click on the Button Below to know about that module in Details.</b>
+...❤️"""
 
-- Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
+    SOURCE_TXT = """Category: <b>Source  Code 💡</b>
+..
+Function: <b>Nothing.!! 😂📍</b>
+.
+<b>THIS BOT IS OPEN SOURCE. YOU CAN USE THAT SOURCE TO CREATE YOUR OWN PERSONAL BOT.✨💥</b>
+----------->
+ <a href='https://github.com/EvamariaTG/EvaMaria'><b> • Base Repository </b></a>
+<a href='https://github.com/KoshikKumar17/My-EditeD-EvA'><b> • Repository On Which Bot Runs </b></a>"""
 
+    MANUELFILTER_TXT = """Category: <b>FILTERS: Manual Filter 🤘</b>
+..
+Function: <b>Filter is the feature where users can set automated replies for a particular keyword 😇 and This Bot will respond whenever a keyword is found the message.✌️📍
+.
+It supports both Alert and URL Buttons.</b>
+...
+<b>How it Works 🙂?</b>
+.
 <b>NOTE:</b>
-1. eva maria should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
-
+1. Bot must be added in the Group with <b>All Admin Rights.</b>
+2. ONLY Admins can add FILTERS in a chat.
+3. Alert buttons have a MAX limit of 64 characters.
+.
 <b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    BUTTON_TXT = """Help: <b>Buttons</b>
+• /filter - <code>Add a filter in a chat.</code>
+“““
+Like:- /filter [keyword] [reply]
+e.g:- <code>/filter hi Hi</code> will reply to every msg which contains <b>hi</b> with <b>Hi</b>...💥
+<b><i><u>It must be parsed as MarkDown</u></i></b>
+„„„
+• /filters - <code>List all the filters of a chat.</code>
+• /del - <code>Delete a specific filter in chat</code> e.g:- <code>/del [keyword]</code>
+• /delall - <code>Delete all the filters in a chat (Chat owner only)</code>
+"""
 
-- Eva Maria Supports both url and alert inline buttons.
-
+    BUTTON_TXT = """Category: <b>Buttons Help </b>
+..
+Function: <b>It will help you to parse down buttons and Text in MarkDown format.. ✨🤘</b>
+<b>How it Works 🙂?</b>
+.
+#For_Parsing_Text_In_MD_Format
+.
+*hello* :- will result <b>hello</b>
+_hello_ :- will result <i>hello</i>
+[RKrishnaa](https://t.me/RKrishnaa) :- will result <a href='https://t.me/RKrishnaa'>RKrishnaa</a>
+<b>For more:-</b>  Google <code>Syntax for MarkDown</code>
+.
+- This Bot supports both URL and Alert inline buttons. -
+.
 <b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Eva Maria supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
-
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/EvaMariaBot)</code>
-
-<b>Alert buttons:</b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
+<i>1. Telegram will not allow you to send buttons without any content, so content is MANDATORY.
+2. This Bot supports buttons with any telegram media type.
+3. Buttons should be properly parsed in MARKDOWN format.</i>
+...
+<b>URL Buttons:</b>
+<code>[Button Text](buttonurl:https://t.me/RKrishnaa)</code>
+.
+<b>Alert Buttons:</b>
+<code>[Button Text](buttonalert:This is an Alert message.)</code>"""
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
 <b>NOTE:</b>
