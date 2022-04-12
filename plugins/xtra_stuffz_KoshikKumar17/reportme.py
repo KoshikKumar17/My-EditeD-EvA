@@ -5,7 +5,6 @@ import pyrogram
 from info import LOG_CHANNEL
 from pyrogram import Client as Koshik
 from pyrogram import filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 A = """#report ....“
 **Name:-** {}
@@ -14,6 +13,7 @@ A = """#report ....“
 **Direct link:-** {} Else:- tg://openmessage?user_id={}„
 --->
 His Reported Message:- 👇👇"""
+
 @Koshik.on_message(filters.command(["report"]))
 async def report_me(bot, message):
     if message.reply_to_message:
