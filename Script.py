@@ -99,15 +99,6 @@ Function: <b>Upload any type of Media 🖼️ to Telegraph ( telegra.ph ) 🤓�
 >> Wait a bit till it uploads your media to telegra.ph
 
 <i>Done ✅..... You will get a telegra.ph link for your media.😜✨</i>"""
-    SONGDL_TXT = """Category: <b>Song Downloader</b>
-..
-Function: <b>Download any Song from YouTube in .mp3 or .mp4 format.💥</b>
-
-</u></i>‼️THIS FEATURE IS ONLY TO DOWNLOAD SONGS FROM YOUTUBE. NOT OTHER TYPE OF VIDEOS OTHERWISE,  YOU WILL GET WRONG VIDEOS ‼️</i></u>
-
-<b>How it Works 🙂?</b>
->>First choose an option from below Buttons...😁
-As MP3(Audio) or As MP4(Video)"""
     YTTHUMB_TXT = """Category: <b>YouTube Thumbnail Downloader</b>
 ..
 Function: <b>Download the Thumbnail of YouTube videos in HD Quality. ( YouTube #Shorts not supported) ✨💥</b>
