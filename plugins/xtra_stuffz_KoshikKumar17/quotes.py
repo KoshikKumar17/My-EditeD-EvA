@@ -1,34 +1,35 @@
-# (c) @KoshikKumar17
+# ✋ Hand Written by Koshik Kumar
 import os
 import requests
-from requests.utils import requote_uri
-from pyrogram import Client, filters
+import pyrogram
+import json
+from info import LOG_CHANNEL
+from pyrogram import Client as Koshik
+from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-PX = "https://api.quotable.io/random?tags="
-
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('🙋‍♂️ Made by 🙋‍♂️', url='https://t.me/KoshikKumar17')],[InlineKeyboardButton('List All Types of Quote Tags', callback_data='qtstags')]])
+A = """{} with user id:- {} used /quote command."""
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖✨🇮🇳  Made By 🇮🇳✨💖, url='https://t.me/KoshikKumar17')],[InlineKeyboardButton('List All Types of Quote Categories', callback_data='qtstags')]])
 
 @Client.on_message(filters.command("quote"))
-async def get_quote(bot, update):
+async def get_quote(bot, message):
     await update.reply_chat_action("typing")
-    koshik = await update.reply_text("**I Am Processing...😇**",quote=True,reply_markup=BUTTONS)
-    query = update.text.split(None, 1)[1]
-    await koshik.edit_text(
-        text=gett_qt(query),
+    if len(message.command) != 2:
+        await message.reply_text("/quote [quote category] \n\n Like:- `/quote love`", quote=True, reply_markup=BUTTONS)
+        return
+    k = await message.reply_text("**Processing...⏳**", quote=True)    
+    nu = message.text.split(None, 1)[1]
+    URL = f'https://api.quotable.io/random?tags={nu}'
+    request = requests.get(URL)
+    result = request.json()
+    qt = result['content']
+    athr = result['author']
+    tgs = result['tags']
+    gett_qt = f"""**{qt}**\n                  - __{athr}__\n\nCategory:- {tgs}
+\n **@KoshikKumar17** 💖 🇮🇳"""
+    await k.edit_text(
+        text=gett_qt,
         disable_web_page_preview=True,
         reply_markup = BUTTONS
     )
-
-def gett_qt(type):
-    try:
-        r = requests.get(PX + requote_uri(type.lower()))
-        info = r.json()
-        qt = info['content']
-        athr = info['author']
-        tgs = info['tags']
-        gett_qt = f"""**{qt}**\n                  - __{athr}__\n\nCategory:- {tgs}
-\n **@KoshikKumar17** ❤️"""
-        return gett_qt
-    except Exception as error:
-        return error
+    await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id))
