@@ -4,7 +4,7 @@ import requests
 import pyrogram
 import json
 from info import LOG_CHANNEL
-from pyrogram import Client as Koshik
+from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
