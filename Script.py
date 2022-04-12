@@ -160,12 +160,6 @@ Function: <b>Get yourself Inspired with a quote and an image... 🖼️✨</b>
 >> Send the command <code>/inspire</code
 .
 Done ✅.... You will get an image.😁"""
-    PDFTOOLS_TXT = """Category: <b>PDF Tools</b>
-..
-Function: <b>Access different types of PDF functions OR help related to PDFs.💥✨</b>
-
-<b>How it Works 🙂?</b>
->> Send"""
     JOKES_TXT = """Category: <b>Joke 😂</b>
 ..
 Function: <b>Get a Random Joke each time. 😂💥✨</b>
@@ -216,8 +210,6 @@ Will give you a song named <b> Tu Jaane Na </b> as .mp3 or .m4a format with Best
 
 📍 Extra:- You can use /song or /mp3 as command.
 Done ✅... You will get your Song as audio 🤠."""
-
-
     SHTXT_TXT = """Category: <b>Share Text</b>
 ..
 Function: <b>Get shareable link of any type of text. In the format <code>https://t.me/share/url?url=</code> 😊💥</b>
