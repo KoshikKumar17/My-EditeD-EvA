@@ -3,7 +3,8 @@ class script(object):
 My Name is <a href=https://t.me/{}>{}</a>, I am a RoBot which can Help you to simplify your life with Telegram With <b>Multiple Features.</b>
 CLICK on the Help button below know more what I can do with You.
 ...... 💙
-<i> 🤘Don't forget to give your opinion by /report .</i> <u>You can report Bugs, Features or suggestions or Anything you want.😉. It will help me..!</u>"""
+<i> 💥 Don't forget to give your opinion by 
+/report .</i> <u>You can report Bugs, Features or suggestions or Anything you want.😉. It will help me..!</u>"""
 
     ABOUT1_TXT = """<b>Hey😉,
 ✯ 🙄 Library: <a href='https://docs.pyrogram.org'> Pyrogram 1.3.6 </a>
