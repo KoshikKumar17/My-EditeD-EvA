@@ -44,13 +44,14 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('• Add Me To Your Groups •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        ], [
+            InlineKeyboardButton('📝 Manual 📝', url='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'),
+            InlineKeyboardButton('💥 Changelogs 💥', callback_data='changelogs')
+        ], [
+            InlineKeyboardButton('ℹ️ Help ℹ️', callback_data='help'),
+            InlineKeyboardButton('💌 Report 💌', callback_data='reportme'),
+            InlineKeyboardButton('😊 About 😊', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -59,7 +60,6 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await message.reply_text("Please read the Bot's Manual to use this bot easily and use all the features.\n\nhttps://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30", reply_markup=DX)
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
@@ -88,13 +88,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('• Add Me To Your Groups •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        ], [
+            InlineKeyboardButton('📝 Manual 📝', url='https://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30'),
+            InlineKeyboardButton('💥 Changelogs 💥', callback_data='changelogs')
+        ], [
+            InlineKeyboardButton('ℹ️ Help ℹ️', callback_data='help'),
+            InlineKeyboardButton('💌 Report 💌', callback_data='reportme'),
+            InlineKeyboardButton('😊 About 😊', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -103,7 +104,6 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await message.reply_text("Please read the Bot's Manual to use this bot easily and use all the features.\n\nhttps://telegra.ph/All-Commands-Lists-Of-This-Bot-10-30", reply_markup=DX)
         return
     data = message.command[1]
     try:
