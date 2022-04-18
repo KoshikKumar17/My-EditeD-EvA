@@ -16,9 +16,6 @@ Thanks ❤️."""
 
 @Koshik.on_message(filters.command(["sendmsg"]) & filters.user(ADMINS))
 async def sendmsgtouser(bot, message):
-    if len(message.command) != 2:
-        await message.reply_text("/sendmsg [user id] [your message] \n\n Like:- `/sendmsg 1234567890 Hi..!!`", quote=True)
-        return
     await message.reply_chat_action("typing")
     try:
         k = await message.reply_text("**Processing...⏳**", quote=True)
