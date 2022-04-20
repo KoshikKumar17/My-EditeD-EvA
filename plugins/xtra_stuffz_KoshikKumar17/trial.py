@@ -12,7 +12,7 @@ async def getgithub(bot, message):
     await message.reply_chat_action("typing")
     k = await message.reply_text("**Processing...⏳**", quote=True)    
     px = message.text.split(None, 1)[1]
-    if "radhakrishn" in px:
+    if px == "radhakrishn":
     await message.reply_text("**@RadhaKrishna_SB**")
-    else "jklk" in px:
+    else px == "jklk":
     await message.reply_text("**@JayKanhaiyaLaalKi**")
