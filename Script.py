@@ -15,36 +15,22 @@ CLICK on the Help button below know more what I can do with You.
 ✯ 😊Bot Server: <a href='https://heroku.com'> Heroku (Free) </a>
 ✯ 🙋‍♂️Made By: <a href='tg://user?id=1162032262'> @KoshikKumar17 </a>
 ✯ 😝 Thanks to: @TeamEvaMaria
-✯ Build Version: v2.5.1 [ Major ]"""
+✯ Build Version: v2.5.2 [ Major ]"""
 
     QUOTES_TAGS = """Hehe..,
 <b>Here are the Supported categories of quotes:-</b>
-You can use any of them by using:- <code>/quote</code> {tag.name}
+You can use any of them by using:- <code>/quote</code> [category]
 <b>❗❗ This will give you a Quote of that category. ❗❗</b>
 <b>CATEGORIES:</b>
 <code>business</code>, <code>education</code>, <code>faith</code>, <code>famous-quotes</code>, <code>friendship</code>, <code>future</code>, <code>happiness</code>, <code>history</code>, <code>inspirational</code>, <code>life</code>, <code>literature</code>, <code>love</code>, <code>nature</code>, <code>politics</code>, <code>proverb</code>, <code>religion</code>, <code>science</code>, <code>success</code>, <code>technology</code>, <code>wisdom</code>"""
 
-    REVIEW_TXT = """Hey Friends 👋,
-
-Tell me your <b>opinion</b> about this bot😉
-
-<b>It will motivate me to make this bot more user-friendly.😋
-
-If you want to request any bugs or features comment here😉</b>
-"""
-
     CHANGELOGS_TXT = """Hey.,🙂
 <b>Here is the Changelogs of the Latest Update
-Date:- 14th April 2022 IST 🇮🇳
-B.R. Ambedkar Jayanti Special 🙏🏻...
-Thanks a lot to Father of Our Constitution 😊👍🇮🇳
+Date:- 20th April 2022 🇮🇳
 Changelogs:-</b>
 
-<i>--> updated Whole Ui
---> Bot Updated .
---> Some Bugs Fixed .
---> Added many new things.
----> Click /start to know more</i>
+<i>-->Updated Help message.
+--> Click /start to know more.</i>
 .
 <b>For bugs hit /report ...
 .
@@ -255,7 +241,7 @@ Function: <b>Convert any type of text to speech  (Voice🗣️).. #ByGoogle</b>
 
 <b>How it Works 🙂?</b>
 >> Send me any type of <b>text</b> 😃.
->> <b>REPLY that text</b> with command <code>/tts</code>
+>> <b>REPLY that text</b> with command <b>/tts</b>
 
 <i>Done ✅..... You will get your replied text as speech in an Audio File.😉✨</i>"""
 
@@ -265,7 +251,7 @@ Function: <b>Upload any type of Media 🖼️ to Telegraph ( telegra.ph ) 🤓�
 
 <b>How it Works 🙂?</b>
 >> Send me any type of <b>Media ( upto max 5MB) 🖼️</b>.
->> <b>REPLY that media</b> with command <code>/telegraph</code>.
+>> <b>REPLY that media</b> with command <b>/telegraph</b>.
 >> Wait a bit till it uploads your media to telegra.ph
 
 <i>Done ✅..... You will get a telegra.ph link for your media.😜✨</i>"""
@@ -286,7 +272,7 @@ Function: <b>Download the Thumbnail of YouTube videos in HD Quality. ( YouTube #
 
 <b>How it Works 🙂?</b>
 >> Send me a message in the below format:-
-<code> /ytthumb </code> [youtube link]
+<b> /ytthumb </b> [youtube link]
 e.g. -» <code> /ytthumb https://youtu.be/VYslt8bc-4Q </code>
 .
 Done ✅... You will get your thumbnail as an image....🖼️"""
@@ -299,7 +285,7 @@ Function: <b>Find/Search the Tags of YouTube videos in an easy way. ( YouTube #S
 
 <b>How it Works 🙂?</b>
 >> Send me a message in the below format:-
-<code> /yttags </code> [youtube link]
+<b> /yttags </b> [youtube link]
 e.g. -» <code> /yttags https://youtu.be/VYslt8bc-4Q </code>
 .
 Done ✅... You will get the tags of the video as a text....📝"""
@@ -312,7 +298,7 @@ Function: <b>Get anyone's github profile details (Along with their D.P.) 😇✨
 
 <b>How it Works 🙂?</b>
 >> Send me a message in the below format:-
-<code> /github </code> [github username]
+<b> /github </b> [github username]
 e.g. -» <code> /github hkrrish </code>
 .
 Done ✅... You will get all details of that GitHub User along with their D.P."""
@@ -323,7 +309,7 @@ Function: <b>Get a Quote of Specified Category/Tags each time.... 😘✨</b>
 
 <b>How it Works 🙂?</b>
 >> Send me a message in the below format:-
-<code> /quote </code> [quote category]
+<b> /quote </b> [quote category]
 e.g. -» <code> /quote love </code> will give you a Quote of the category (Love ❤️).
 .
 Done ✅... You will get the Quote along with category."""
@@ -333,7 +319,7 @@ Done ✅... You will get the Quote along with category."""
 Function: <b>Get yourself Inspired with a quote and an image... 🖼️✨</b>
 
 <b>How it Works 🙂?</b>
->> Send the command <code>/inspire</code
+>> Send the command <b>/inspire</b>
 .
 Done ✅.... You will get an image.😁"""
 
@@ -350,9 +336,8 @@ Function: <b>Access different types of PDF functions OR help related to PDFs.�
 Function: <b>Get a Random Joke each time. 😂💥✨</b>
 
 <b>How it Works 🙂?</b>
->> Send the command <code>/pdfinfo</code as a <b>reply to a PDF</b> file to generate <b>details of That Replied PDF.</b>
+>> Send the command <b>/joke</b> to get a joke.
 
->> <i> More features coming soon....</i>
 ."""
 
     SHORTLINK_TXT = """Category: <b>Link Shortener</b>
@@ -362,7 +347,7 @@ Function: <b>Shorten long/real links in a small link without any Wastage of Time
 </i>Currently Supported:- clck.ru , da.gd , is gd , osdb.link , ttm.sh <b>[ All are AD-FREE ]</b></i>
 <b>How it Works 🙂?</b>
 >> Send me a message in the below format:-
-<code> /short </code> [your long/real link]
+<b> /short </b> [your long/real link]
 e.g. -» <code> /short https://youtu.be/VYslt8bc-4Q </code>
 .
 Done ✅... You will get your shortened  link.. 🔗 That's it!"""
@@ -373,7 +358,7 @@ Function: <b>UnShorten shortened links to real / long link without any Wastage o
 
 <b>How it Works 🙂?</b>
 >> Send me a message in the below format:-
-<code> /unshort </code> [your long link]
+<b> /unshort </b> [your long link]
 e.g. -» <code> /unshort https://bit.ly/BGMI_AppStore </code>
 .
 Done ✅... You will get your real / long  link.. 🔗 That's it!"""
@@ -382,7 +367,7 @@ Done ✅... You will get your real / long  link.. 🔗 That's it!"""
 <b>You have chooses as MP4(As Video)🎥</b> .... Now follow the below process:
 <b>How it Works 🙂?</b>
 >> Send me a message in the below format:-
-<code> /video </code> [youtube song name]
+<b> /video </b> [youtube song name]
 e.g. -» <code> /video tu jaane na </code>
 Will give you a song named <b> Tu Jaane Na </b> in .mp4 format with Best Quality. 💥
 
@@ -393,7 +378,7 @@ Done ✅... You will get your Song as video 🤠."""
 <b>You have chooses as MP3 (As Audio)🎵</b> .... Now follow the below process:
 <b>How it Works 🙂?</b>
 >> Send me a message in the below format:-
-<code> /song </code> [youtube song name]
+<b> /song </b> [youtube song name]
 e.g. -» <code> /song tu jaane na </code>
 Will give you a song named <b> Tu Jaane Na </b> as .mp3 or .m4a format with Best Quality. 💥
 
