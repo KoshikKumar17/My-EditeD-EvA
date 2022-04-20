@@ -13,6 +13,6 @@ async def getgithub(bot, message):
     k = await message.reply_text("**Processing...⏳**", quote=True)    
     px = message.text.split(None, 1)[1]
     if px == "radhakrishn":
-    await message.reply_text("**@RadhaKrishna_SB**")
-    else px == "jklk":
-    await message.reply_text("**@JayKanhaiyaLaalKi**")
+        await message.reply_text("**@RadhaKrishna_SB**")
+    elif px == "jklk":
+        await message.reply_text("**@JayKanhaiyaLaalKi**")
