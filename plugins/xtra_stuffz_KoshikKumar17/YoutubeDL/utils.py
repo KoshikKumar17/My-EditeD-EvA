@@ -1,7 +1,7 @@
 # By Koshik Kumar 🇮🇳
 # Thanks to TgExplore
 from __future__ import unicode_literals
-from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import Client, filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
 import youtube_dl
 import asyncio
 import subprocess as sp
