@@ -1,5 +1,7 @@
 git+https://github.com/subinps/pyrogram@inline-m
+git+https://github.com/ytdl-org/youtube-dl
 tgcrypto
+hachoir
 Pillow
 pymongo[srv]==3.12.3
 motor==2.5.1
