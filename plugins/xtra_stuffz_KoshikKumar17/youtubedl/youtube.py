@@ -17,16 +17,6 @@ async def ytdl(bot, message):
     if len(message.command) != 2:
         await message.reply_text("/ytdl [youtube link] \n\n Like:- `/ytdl https://youtu.be/dgght5hbg`", quote=True)
         return
-
-    userLastDownloadTime = user_time.get(message.chat.id)
-    try:
-        if userLastDownloadTime > datetime.now():
-            wait_time = round((userLastDownloadTime - datetime.now()).total_seconds() / 60, 2)
-            await message.reply_text(f"`Wait {wait_time} Minutes before next Request`. **You can use YTDL command every 5 minutes.**", quote=True)
-            return
-    except:
-        pass
-
     un = message.text.split(None, 1)[1]
     url = un
     await message.reply_chat_action("typing")
