@@ -40,9 +40,16 @@ async def start(client, message):
             await db.add_chat(message.chat.id, message.chat.title)
         return 
     if not await db.is_user_exist(message.from_user.id):
+        k = await message.reply_text("**Processing...⏳**", quote=True)
+        await k.edit_text("__Authenticating....__")
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
+        await k.edit_text("**Authenticaton Successful...✅**")
+        await k.delete()
     if len(message.command) != 2:
+        k = await message.reply_text("**Processing...⏳**", quote=True)
+        await k.edit_text("__Authenticating....__")
+        await k.edit_text("**Authenticaton Successful...✅**")
         buttons = [[
             InlineKeyboardButton('• Add Me To Your Groups •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
@@ -54,6 +61,7 @@ async def start(client, message):
             InlineKeyboardButton('😊 About 😊', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await k.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
