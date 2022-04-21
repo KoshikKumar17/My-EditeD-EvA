@@ -4,7 +4,7 @@
 from datetime import datetime, timedelta
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from plugins.xtra_stuffz_KoshikKumar17.YoutubeDL.utils import extractYt, create_buttons, user_time
+from plugins.xtra_stuffz_KoshikKumar17.youtubedl.utils import extractYt, create_buttons, user_time
 import wget
 import os
 from os import error
