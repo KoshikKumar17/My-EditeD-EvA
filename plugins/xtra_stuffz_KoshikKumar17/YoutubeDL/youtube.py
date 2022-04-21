@@ -7,6 +7,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from plugins.xtra_stuffz_KoshikKumar17.YoutubeDL.utils import extractYt, create_buttons, user_time
 import wget
 import os
+from os import error
 from PIL import Image
 
 
@@ -36,16 +37,22 @@ async def ytdl(bot, message):
         return
 
     buttons = InlineKeyboardMarkup(list(create_buttons(formats)))
-    sentm = await message.reply_text("Processing Youtube Url 🔎 🔎 🔎")
+    k = await message.reply_text("**Processing Youtube Url... 🔎**", quote=True)
     try:
-
-
-
-
-
-
-
-
-
-
-
+        img = wget.download(thumbnail_url)
+        im = Image.open(img).convert("RGB")
+        output_directory = os.path.join(os.getcwd(), "downloads", str(message.chat.id))
+        if not os.path.isdir(output_directory):
+            os.makedirs(output_directory)
+        thumb_image_path = f"{output_directory}.jpg"
+        im.save(thumb_image_path,"jpeg")
+        await message.reply_photo(thumb_image_path, caption=title, reply_markup=buttons)
+        await k.delete()
+    except Exception as e:
+        print(e)
+        try:
+            thumbnail_url = "https://telegra.ph/file/ce37f8203e1903feed544.png"
+            await message.reply_photo(thumbnail_url, caption=title, reply_markup=buttons)
+        except Exception as e:
+            await k.edit(
+            f"<code>{e}</code> #Error")   #Ended
