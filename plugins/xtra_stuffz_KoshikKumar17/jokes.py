@@ -13,7 +13,7 @@ A = """Hi, {} with user id:- {} used /joke command."""
 @Client.on_message(filters.command("joke"))
 async def jokeapibot(bot, update):
     await update.reply_chat_action("typing")
-    koshik = await update.reply_text("Getting a Joke...😂")
+    koshik = await update.reply_text("**Processing...⏳**", quote=True)
     px = "https://v2.jokeapi.dev/joke/Any?type=single"
     request = requests.get(px)
     result = request.json()
