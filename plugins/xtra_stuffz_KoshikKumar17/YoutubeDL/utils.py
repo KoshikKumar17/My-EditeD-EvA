@@ -9,6 +9,8 @@ import subprocess as sp
 import json
 
 
+user_time = 300
+
 def probe(vid_file_path):
     """
     Give a json from ffprobe command line
