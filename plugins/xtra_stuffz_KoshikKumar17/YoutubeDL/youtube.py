@@ -25,3 +25,27 @@ async def ytdl(bot, message):
             return
     except:
         pass
+
+    un = message.text.split(None, 1)[1]
+    url = un
+    await message.reply_chat_action("typing")
+    try:
+        title, thumbnail_url, formats = extractYt(url)
+    except Exception:
+        await message.reply_text("`Failed To Fetch Youtube Data... 😔 \nPossible Youtube Blocked server ip \n#error`")
+        return
+
+    buttons = InlineKeyboardMarkup(list(create_buttons(formats)))
+    sentm = await message.reply_text("Processing Youtube Url 🔎 🔎 🔎")
+    try:
+
+
+
+
+
+
+
+
+
+
+
