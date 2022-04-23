@@ -10,7 +10,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 DLLC = "./DOWNLOADS/UNZIP/"
-A = """**STARTING DOWNLOAD**"""
+A = "**STARTING DOWNLOAD**"
 
 Client.on_message(filters.command(["unzip"]))
 async def unzip(bot, update):
@@ -28,7 +28,7 @@ async def unzip(bot, update):
     reply_message = update.reply_to_message
     if ((reply_message is not None) and
         (reply_message.document is not None) and
-        (reply_message.document.file_name.endswith(Translation.UNZIP_SUPPORTED_EXTENSIONS))):
+        (reply_message.document.file_name.endswith("zip", "rar"))):
         a = await bot.send_message(
             chat_id=update.chat.id,
             text=A,
@@ -87,7 +87,7 @@ async def unzip(bot, update):
                     pass
                 await bot.edit_message_text(
                     chat_id=update.chat.id,
-                    text="Sorry. Errors occurred while processing compressed file. Please check everything again twice, and if the issue persists, report this to <a href='https://telegram.dog/KoshikKumar'>Click Here</a>",
+                    text="<i>Sorry. Errors occurred while processing compressed file. Please check everything again twice, and if the issue persists, report this to <a href='https://telegram.dog/KoshikKumar'>Click Here</a></i>",
                     disable_web_page_preview=True,
                     parse_mode="html",
                     message_id=a.message_id
@@ -120,7 +120,7 @@ async def unzip(bot, update):
                         callback_data=cb_string.encode("UTF-8")
                     )
                 ])
-                reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
+                reply_markup = InlineKeyboardMarkup(inline_keyboard)
                 await bot.edit_message_text(
                     chat_id=update.chat.id,
                     text=Translation.EXTRACT_ZIP_STEP_TWO,
