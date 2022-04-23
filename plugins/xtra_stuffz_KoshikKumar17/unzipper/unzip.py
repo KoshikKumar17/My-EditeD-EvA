@@ -31,7 +31,7 @@ async def unzip(bot, update):
         (reply_message.document.file_name.endswith(Translation.UNZIP_SUPPORTED_EXTENSIONS))):
         a = await bot.send_message(
             chat_id=update.chat.id,
-            text=Translation.DOWNLOAD_START,
+            text=A,
             reply_to_message_id=update.message_id
         )
         c_time = time.time()
@@ -55,16 +55,16 @@ async def unzip(bot, update):
         else:
             await bot.edit_message_text(
                 chat_id=update.chat.id,
-                text=Translation.SAVED_RECVD_DOC_FILE,
+                text="**Saved File successfully...✅**",
                 message_id=a.message_id
             )
-            extract_dir_path = Config.DOWNLOAD_LOCATION + \
+            extract_dir_path = DLLC + \
                 "/" + str(update.from_user.id) + "zipped" + "/"
             if not os.path.isdir(extract_dir_path):
                 os.makedirs(extract_dir_path)
             await bot.edit_message_text(
                 chat_id=update.chat.id,
-                text=Translation.EXTRACT_ZIP_INTRO_THREE,
+                text="**Analyzing received file. ⚠️ This might take some time. Please be patient.**",
                 message_id=a.message_id
             )
             try:
@@ -87,7 +87,7 @@ async def unzip(bot, update):
                     pass
                 await bot.edit_message_text(
                     chat_id=update.chat.id,
-                    text=Translation.EXTRACT_ZIP_ERRS_OCCURED,
+                    text="Sorry. Errors occurred while processing compressed file. Please check everything again twice, and if the issue persists, report this to <a href='https://telegram.dog/KoshikKumar'>Click Here</a>",
                     disable_web_page_preview=True,
                     parse_mode="html",
                     message_id=a.message_id
