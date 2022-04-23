@@ -123,14 +123,14 @@ async def unzip(bot, update):
                 reply_markup = InlineKeyboardMarkup(inline_keyboard)
                 await bot.edit_message_text(
                     chat_id=update.chat.id,
-                    text=Translation.EXTRACT_ZIP_STEP_TWO,
+                    text="**Select file_name to upload from the below options.**",
                     message_id=a.message_id,
                     reply_markup=reply_markup,
                 )
     else:
         await bot.send_message(
             chat_id=update.chat.id,
-            text=Translation.EXTRACT_ZIP_INTRO_ONE,
+            text="**Send a compressed file first, Then reply /unzip command to the file.**",
             reply_to_message_id=update.message_id
         )
 
