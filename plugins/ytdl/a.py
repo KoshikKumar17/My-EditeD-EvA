@@ -1,4 +1,5 @@
-© SpEcHiDe
+# © SpEcHiDe
+
 import math
 import os
 import time
