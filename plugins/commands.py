@@ -268,7 +268,7 @@ async def about(bot, update):
 @Client.on_message(filters.private & filters.command(["help"]))
 async def helpmsg(bot, update):
     await update.reply_chat_action("typing")
-    buttons = [[
+    buttons = InlineKeyboardMarkup([[
         InlineKeyboardButton('✨💥 Here is the Help Menu 💥✨', callback_data='help')
     ], [
         InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
@@ -310,9 +310,8 @@ async def helpmsg(bot, update):
         InlineKeyboardButton('💌 Report 💌 ', callback_data='reportme')
     ], [
         InlineKeyboardButton('💙 DISCLAIMER 💙', callback_data='disclaimer')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await update.reply_text("**💐Here is the Help Menu 💥.** Click on the **Desired Button** to get the Help of that **Module.** 😇 :)", reply_markup=reply_markup, quote=True)
+    ]])
+    await update.reply_text("**💐Here is the Help Menu 💥.** Click on the **Desired Button** to get the Help of that **Module.** 😇 :)", reply_markup=buttons, quote=True)
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
