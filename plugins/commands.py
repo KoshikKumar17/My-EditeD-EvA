@@ -257,7 +257,7 @@ async def start(client, message):
         )
                     
 @Client.on_message(filters.private & filters.command(["about"]))
-async def help(bot, update):
+async def about(bot, update):
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('✨ Click Here (About)✨', callback_data='about1')]])
     await update.reply_text(
         text=script.ABOUTT_TEXT,
@@ -266,7 +266,7 @@ async def help(bot, update):
     )
 
 @Client.on_message(filters.private & filters.command(["help"]))
-async def help(bot, update):
+async def helpmsg(bot, update):
     await update.reply_chat_action("typing")
     buttons = [[
         InlineKeyboardButton('✨💥 Here is the Help Menu 💥✨', callback_data='help')
@@ -312,10 +312,7 @@ async def help(bot, update):
         InlineKeyboardButton('💙 DISCLAIMER 💙', callback_data='disclaimer')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await update reply_text(
-            text="**💐Here is the Help Menu 💥.** Click on the **Desired Button** to get the Help of that Module.😇 :),
-            reply_markup=reply_markup,
-        )
+        await update.reply_text("**💐Here is the Help Menu 💥.** Click on the **Desired Button** to get the Help of that **Module.** 😇 :)", reply_markup=reply_markup, quote=True)
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
