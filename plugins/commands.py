@@ -265,6 +265,58 @@ async def help(bot, update):
         disable_web_page_preview=True,
     )
 
+@Client.on_message(filters.private & filters.command(["help"]))
+async def help(bot, update):
+    await update.reply_chat_action("typing")
+    buttons = [[
+        InlineKeyboardButton('✨💥 Here is the Help Menu 💥✨', callback_data='help')
+    ], [
+        InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
+        InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+    ], [
+        InlineKeyboardButton('Connection', callback_data='coct'),
+        InlineKeyboardButton('Extra Mods', callback_data='extra'),
+        InlineKeyboardButton('Buttons', callback_data='button1')
+    ], [
+        InlineKeyboardButton('Text to Speech', callback_data='tts'),
+        InlineKeyboardButton('Image to PDF', callback_data='img2pdf')
+    ], [
+        InlineKeyboardButton('Attach Link', callback_data='attachlink'),
+        InlineKeyboardButton('Telegraph', callback_data='tgraph'),
+        InlineKeyboardButton('Github', callback_data='github')
+    ], [
+        InlineKeyboardButton('Bot Status (Heroku)', callback_data='botstatus_hk'),
+        InlineKeyboardButton('Google Translator', callback_data='gtrans')
+    ], [
+        InlineKeyboardButton('Jokes', callback_data='jokes'),
+        InlineKeyboardButton('Quotes', callback_data='quotes'),
+        InlineKeyboardButton('Inspire', callback_data='inspire')
+    ], [
+        InlineKeyboardButton('YT Thumbnail DL', callback_data='ytthumb'),
+        InlineKeyboardButton('YT Tags Finder', callback_data='yttags')
+    ], [
+        InlineKeyboardButton('Share Text', callback_data='shtxt'),
+        InlineKeyboardButton('PDF Tools', callback_data='pypdf2'),
+        InlineKeyboardButton('Admin Tools', callback_data='admin1')
+    ], [
+        InlineKeyboardButton('Shorten Link', callback_data='shortlink'),
+        InlineKeyboardButton('Unshort Link', callback_data='unshortenlink')
+    ], [
+        InlineKeyboardButton('🏡 Home 🏡', callback_data='start'),
+        InlineKeyboardButton('💡 Source 💡', callback_data='source1'),
+        InlineKeyboardButton('😇 Status 😇', callback_data='stats')
+    ], [
+        InlineKeyboardButton('🎵 Song DL 🎵 ', callback_data='songdl'),
+        InlineKeyboardButton('💌 Report 💌 ', callback_data='reportme')
+    ], [
+        InlineKeyboardButton('💙 DISCLAIMER 💙', callback_data='disclaimer')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await update reply_text(
+            text="**💐Here is the Help Menu 💥.** Click on the **Desired Button** to get the Help of that Module.😇 :),
+            reply_markup=reply_markup,
+        )
+
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
            
