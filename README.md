@@ -1,10 +1,10 @@
 <h1 align="center">
-  <b><a href="https://KoshikKumar17.github.io/My-EditeD-EvA/bot">KoshikKumar17'S Bot</a></b>
+  <b><a href="https://KoshikKumar17.github.io/My-EditeD-EvA">KoshikKumar17'S Bot</a></b>
 </h1>
 
 
 
-➡️ **[Read the Docs](https://KoshikKumar17.github.io/My-EditeD-EvA)**
+➡️ **[View The Bot](https://KoshikKumar17.github.io/My-EditeD-EvA)**
 
 
 
