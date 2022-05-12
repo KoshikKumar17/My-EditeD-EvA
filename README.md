@@ -212,8 +212,7 @@ broadcast - to broadcast a message to all Bot users.
 [![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.me/KOSHIKKUMAR17)
 
 ## Disclaimer
-<img alt="GPL-2.0 license" src="/assets/LICENSE.png" width="155" height="51">
-Licensed under [GPL-2.0 License](https://github.com/KoshikKumar17/My-EditeD-EvA/blob/main/LICENSE)
----
----
-Selling The Codes To Other People For Money Is Strictly Prohibited.
+![GPL-2.0 license](./assets/LICENSE.png)
+Licensed under GPL-2.0 License](https://github.com/KoshikKumar17/My-EditeD-EvA/blob/main/LICENSE)
+
+**Selling The Codes To Other People For Money Is Strictly Prohibited.**
