@@ -1,13 +1,12 @@
 <h1 align="center">
   <b><a href="https://KoshikKumar17.github.io/My-EditeD-EvA/bot">KoshikKumar17'S Bot</a></b>
 </h1>
-.
-.
-.
+
+
+
 ➡️ **[Read the Docs](https://KoshikKumar17.github.io/My-EditeD-EvA)**
-.
-.
-.
+
+
 
 [![Stars](https://img.shields.io/github/stars/KoshikKumar17/My-EditeD-EvA?style=flat-square&color=yellow)](https://github.com/KoshikKumar17/My-EditeD-EvA/stargazers)
 [![Forks](https://img.shields.io/github/forks/KoshikKumar17/My-EditeD-EvA?style=flat-square&color=orange)](https://github.com/KoshikKumar17/My-EditeD-EvA/fork)
