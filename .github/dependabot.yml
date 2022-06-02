@@ -5,8 +5,12 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
+  - package-ecosystem: "pip" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    open-pull-requests-limit: 20
+    target-branch: V2.0
 #Thanks (Koshik)
