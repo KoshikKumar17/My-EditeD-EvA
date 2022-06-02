@@ -4,7 +4,7 @@ hachoir
 Pillow
 pymongo[srv]==3.12.3
 motor==2.5.1
-marshmallow==3.14.1
+marshmallow==3.16.0
 umongo==3.0.1
 heroku3
 YoutubeTags
