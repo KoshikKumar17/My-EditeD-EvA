@@ -22,11 +22,13 @@ async def share_text(client, message):
                 [
                     [
                         InlineKeyboardButton(
-                            "💛 Father 💛", url=f"https://t.me/KoshikKumar17")
-                    ]                
+                            "💛 Father 💛", url="https://t.me/KoshikKumar17"
+                        )
+                    ]
                 ]
             ),
-            reply_to_message_id=reply_id
+            reply_to_message_id=reply_id,
         )
+
         return
     await message.reply_text(share_link(input_text), reply_to_message_id=reply_id)

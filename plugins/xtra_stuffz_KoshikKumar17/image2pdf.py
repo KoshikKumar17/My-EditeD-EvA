@@ -36,9 +36,9 @@ async def done(client,message):
   await message.reply_text( "No image !!🤷🏻🤷🏻")
   return
 
- path = f"{message.from_user.id}" + "@KoshikKumar17.pdf"
+ path = f"{message.from_user.id}@KoshikKumar17.pdf"
  images[0].save(path, save_all = True, append_images = images[1:])
- 
+
  await client.send_document(message.from_user.id, open(path, "rb"), caption = "Heya!! Here your PDF !!")
  os.remove(path)
 

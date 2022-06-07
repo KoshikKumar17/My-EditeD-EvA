@@ -31,9 +31,9 @@ async def bot_dyno_status(client,message):
             'Accept': 'application/vnd.heroku+json; version=3.account-quotas',
             }
 
-            path = "/accounts/" + accountid + "/actions/get-quota"
+            path = f"/accounts/{accountid}/actions/get-quota"
 
-            request = requests.get("https://api.heroku.com" + path, headers=headers)
+            request = requests.get(f"https://api.heroku.com{path}", headers=headers)
 
             if request.status_code == 200:
                 result = request.json()
@@ -42,7 +42,7 @@ async def bot_dyno_status(client,message):
                 quota_used = result['quota_used']
 
                 quota_left = total_quota - quota_used
-                
+
                 total = math.floor(total_quota/3600)
                 used = math.floor(quota_used/3600)
                 hours = math.floor(quota_left/3600)

@@ -73,8 +73,7 @@ async def addfilter(client, message):
         try:
             rm = message.reply_to_message.reply_markup
             btn = rm.inline_keyboard
-            msg = get_file_id(message.reply_to_message)
-            if msg:
+            if msg := get_file_id(message.reply_to_message):
                 fileid = msg.file_id
                 reply_text = message.reply_to_message.caption.html
             else:
@@ -118,7 +117,7 @@ async def addfilter(client, message):
 
 @Client.on_message(filters.command(['viewfilters', 'filters']) & filters.incoming)
 async def get_all(client, message):
-    
+
     chat_type = message.chat.type
     userid = message.from_user.id if message.from_user else None
     if not userid:

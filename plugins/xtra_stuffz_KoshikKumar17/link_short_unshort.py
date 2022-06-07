@@ -31,7 +31,7 @@ def shortlink(type):
         isgd = info['is.gd']
         osdb = info['osdb.link']
         ttm = info['ttm.sh']
-        shortlink = f"""
+        return f"""
 **🔗Your link has been shortened 🔗** :\n \n
 **CLICKRU:-** {clickru}\n
 **DAGD:-** {dagd}\n
@@ -39,7 +39,7 @@ def shortlink(type):
 **OSDBLINK:-** {osdb}\n
 **TTMSH:-** {ttm}\n
 \n**•| @KoshikKumar17 |•**"""
-        return shortlink
+
     except Exception as error:
         return error
 
@@ -60,12 +60,12 @@ def longlink(type):
         info = r.json()
         rqrl = info['requested_url']
         rerl = info['resolved_url']
-        longlink = f"""**Your Link Un-ShorTeNed **
+        return f"""**Your Link Un-ShorTeNed **
 
 **Short Url **:- {rqrl}\n
 **Long ** {rerl}
 
 \n**•| @KoshikKumar17 |•**"""
-        return longlink
+
     except Exception as error:
         return error

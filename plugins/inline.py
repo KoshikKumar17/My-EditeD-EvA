@@ -11,10 +11,7 @@ cache_time = 0 if AUTH_USERS or AUTH_CHANNEL else CACHE_TIME
 
 async def inline_users(query: InlineQuery):
     if AUTH_USERS:
-        if query.from_user and query.from_user.id in AUTH_USERS:
-            return True
-        else:
-            return False
+        return bool(query.from_user and query.from_user.id in AUTH_USERS)
     if query.from_user and query.from_user.id not in temp.BANNED_USERS:
         return True
     return False
@@ -22,7 +19,7 @@ async def inline_users(query: InlineQuery):
 @Client.on_inline_query()
 async def answer(bot, query):
     """Show search results for given inline query"""
-    
+
     if not await inline_users(query):
         await query.answer(results=[],
                            cache_time=0,
