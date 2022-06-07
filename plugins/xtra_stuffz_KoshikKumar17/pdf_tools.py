@@ -16,20 +16,20 @@ DLLC = "./DOWNLOADS/PyPDF/"
 @Koshik.on_message(filters.command(["pdfinfo"]))
 async def info(bot, message):
      try:
-         if message.reply_to_message:
-              txt = await message.reply_text("**Validating PDF...🌐**", quote=True) #VALIDATING PDF
-              pdf_path = DLLC + f"{message.chat.id}.pdf" # PDF FILE PATH
-              await txt.edit("**Downloading....⬇️**")
-              await message.reply_to_message.download(pdf_path)  
-              await txt.edit("**Downloaded File✅✨**")
-              pdf = open(pdf_path,'rb')
-              pdf_reader = PyPDF2.PdfFileReader(pdf) # PDF READER
-              await txt.edit("**Getting Number of Pages....😎😎**")
-              num_of_pages = pdf_reader.getNumPages()
-              await txt.edit(f"**Found {num_of_pages} Page(s)...😇**")
-              await txt.edit("**Getting PDF info...⏳**")
-              info = pdf_reader.getDocumentInfo()
-              await txt.edit(f"""
+          if message.reply_to_message:
+               txt = await message.reply_text("**Validating PDF...🌐**", quote=True) #VALIDATING PDF
+               pdf_path = f"{DLLC}{message.chat.id}.pdf"
+               await txt.edit("**Downloading....⬇️**")
+               await message.reply_to_message.download(pdf_path)
+               await txt.edit("**Downloaded File✅✨**")
+               pdf = open(pdf_path,'rb')
+               pdf_reader = PyPDF2.PdfFileReader(pdf) # PDF READER
+               await txt.edit("**Getting Number of Pages....😎😎**")
+               num_of_pages = pdf_reader.getNumPages()
+               await txt.edit(f"**Found {num_of_pages} Page(s)...😇**")
+               await txt.edit("**Getting PDF info...⏳**")
+               info = pdf_reader.getDocumentInfo()
+               await txt.edit(f"""
 **Author** : {info.author}
 **Creator** : {info.creator}
 **Producer** : {info.producer}
@@ -38,11 +38,11 @@ async def info(bot, message):
 **Pages** : {num_of_pages}
 
 **@KoshikKumar17** 💖""")
-              await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id)) 
-              await message.reply_to_message.forward(chat_id=LOG_CHANNEL) 
+               await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id))
+               await message.reply_to_message.forward(chat_id=LOG_CHANNEL) 
 
-              os.remove(pdf_path)
-         else:
-             await message.reply_text("**Please Reply to a PDF File...😪😪**", quote=True)
+               os.remove(pdf_path)
+          else:
+               await message.reply_text("**Please Reply to a PDF File...😪😪**", quote=True)
      except Exception as error :
          await message.reply_text(f"**Oops🥴 ,** `{error}`", quote=True)
