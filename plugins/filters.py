@@ -158,7 +158,7 @@ async def get_all(client, message):
         filterlist = f"Total number of filters in **{title}** : {count}\n\n"
 
         for text in texts:
-            keywords = " ×  `{}`\n".format(text)
+            keywords = f" ×  `{text}`\n"
 
             filterlist += keywords
 
