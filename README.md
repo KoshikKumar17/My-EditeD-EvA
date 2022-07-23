@@ -4,7 +4,7 @@
 
 
 
-➡️ **[View The Bot](https://KoshikKumar17.github.io/My-EditeD-EvA)**
+➡️ **[~View The Bot~](https://KoshikKumar17.github.io/My-EditeD-EvA)**
 
 
 
