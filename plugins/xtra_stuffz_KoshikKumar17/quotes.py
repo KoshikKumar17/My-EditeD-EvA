@@ -15,21 +15,21 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖✨🇮🇳  Made By 
 async def get_quote(bot, message):
     await message.reply_chat_action("typing")
     if len(message.command) != 2:
-        await message.reply_text("**Processing...**")
-            URL = f'https://api.quotable.io/random'
-            request = requests.get(URL)
-            result = request.json()
-            qt = result['content']
-            athr = result['author']
-            tgs = result['tags']
-            gett_qt = f"""**{qt}**\n                  - __{athr}__\n\nCategory:- {tgs}
+    await message.reply_text("**Processing...**")
+    URL = f'https://api.quotable.io/random'
+    request = requests.get(URL)
+    result = request.json()
+    qt = result['content']
+    athr = result['author']
+    tgs = result['tags']
+    gett_qt = f"""**{qt}**\n                  - __{athr}__\n\nCategory:- {tgs}
 \n **@KoshikKumar17** 💖 🇮🇳"""
-        await message.edit_text(
-            text=gett_qt,
-            disable_web_page_preview=True,
-            reply_markup = BUTTONS
+    await message.edit_text(
+        text=gett_qt,
+        disable_web_page_preview=True,
+        reply_markup = BUTTONS
     )
-        return
+    return
     k = await message.reply_text("**Processing...⏳**", quote=True)    
     nu = message.text.split(None, 1)[1]
     URL = f'https://api.quotable.io/random?tags={nu}'
