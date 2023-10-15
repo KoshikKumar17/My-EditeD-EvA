@@ -15,7 +15,7 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖✨🇮🇳  Made By 
 async def get_quote(bot, message):
     await message.reply_chat_action("typing")
     if len(message.command) != 2:
-    await message.reply_text("**Processing...**")
+        await message.reply_text("**Processing...**")
     URL = f'https://api.quotable.io/random'
     request = requests.get(URL)
     result = request.json()
