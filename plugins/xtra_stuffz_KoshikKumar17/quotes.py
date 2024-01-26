@@ -13,23 +13,23 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖✨🇮🇳  Made By 
 
 @Client.on_message(filters.command("quote"))
 async def get_quote(bot, message):
-    await message.reply_chat_action("typing")
-    if len(message.command) != 2:
-        await message.reply_text("**Processing...**")
+if len(message.command) != 2:
+    k = await message.reply_text("**Processing...⏳**")
+    await asyncio.sleep(2)
+    await k.delete()
     URL = f'https://api.quotable.io/random'
     request = requests.get(URL)
     result = request.json()
     qt = result['content']
     athr = result['author']
     tgs = result['tags']
-    gett_qt = f"""**{qt}**\n                  - __{athr}__\n\nCategory:- {tgs}
-\n **@KoshikKumar17** 💖 🇮🇳"""
-    await message.edit_text(
+    gett_qt = f"""**“{qt}”**\n                        ~ {athr}\n\n**Category**:- {tgs}"""
+    await message.reply(
         text=gett_qt,
         disable_web_page_preview=True,
         reply_markup = BUTTONS
     )
-    return
+else:
     k = await message.reply_text("**Processing...⏳**", quote=True)    
     nu = message.text.split(None, 1)[1]
     URL = f'https://api.quotable.io/random?tags={nu}'
@@ -38,11 +38,10 @@ async def get_quote(bot, message):
     qt = result['content']
     athr = result['author']
     tgs = result['tags']
-    gett_qt = f"""**{qt}**\n                  - __{athr}__\n\nCategory:- {tgs}
-\n **@KoshikKumar17** 💖 🇮🇳"""
-    await k.edit_text(
+    gett_qt = f"""**“{qt}”**\n                      ~ {athr}\n\n**Category**:- {tgs}"""
+    await message.reply(
         text=gett_qt,
         disable_web_page_preview=True,
         reply_markup = BUTTONS
     )
-    await bot.send_message(LOG_CHANNEL, A.format(message.from_user.mention, message.from_user.id))
+    await k.delete()
