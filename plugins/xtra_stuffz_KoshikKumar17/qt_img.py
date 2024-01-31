@@ -3,6 +3,7 @@ import os
 import requests
 import pyrogram
 import json
+# first install pip install bing-image-urls
 from bing_image_urls import bing_image_urls
 from info import LOG_CHANNEL
 from pyrogram import Client
@@ -29,8 +30,7 @@ async def get_quote(bot, message):
         await message.reply_photo(
             photo=link,
             caption=gett_qt,
-            disable_web_page_preview=True,
-            reply_markup = BUTTONS
+            disable_web_page_preview=True
         )
     else:
         k = await message.reply_text("**Processing...⏳**", quote=True)
@@ -46,7 +46,6 @@ async def get_quote(bot, message):
         await message.reply_photo(
             photo=link,
             caption=gett_qt,
-            disable_web_page_preview=True,
-            reply_markup = BUTTONS
+            disable_web_page_preview=True
         )
         await k.delete()
