@@ -3,6 +3,7 @@ import os
 import requests
 import pyrogram
 import json
+from bing_image_urls import bing_image_urls
 from info import LOG_CHANNEL
 from pyrogram import Client
 from pyrogram import filters
@@ -24,8 +25,10 @@ async def get_quote(bot, message):
         athr = result['author']
         tgs = result['tags']
         gett_qt = f"""**“{qt}”**\n                        ~ {athr}\n\n**Category**:- {tgs}"""
-        await message.reply(
-            text=gett_qt,
+        link = bing_image_urls(f'{qt}', limit=1)
+        await message.reply_photo(
+            photo=link,
+            caption=gett_qt,
             disable_web_page_preview=True,
             reply_markup = BUTTONS
         )
@@ -39,8 +42,10 @@ async def get_quote(bot, message):
         athr = result['author']
         tgs = result['tags']
         gett_qt = f"""**“{qt}”**\n                      ~ {athr}\n\n**Category**:- {tgs}"""
-        await message.reply(
-            text=gett_qt,
+        link = bing_image_urls(f'{qt}', limit=1)
+        await message.reply_photo(
+            photo=link,
+            caption=gett_qt,
             disable_web_page_preview=True,
             reply_markup = BUTTONS
         )
