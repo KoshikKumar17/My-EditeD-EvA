@@ -13,8 +13,8 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 A = """{} with user id:- {} used /quote command."""
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖✨🇮🇳  Made By 🇮🇳✨💖', url='https://t.me/KoshikKumar17')],[InlineKeyboardButton('List All Types of Quote Categories', callback_data='qtstags')]])
 
-@Client.on_message(filters.command("quote"))
-async def get_quote(bot, message):
+@Client.on_message(filters.command("imgqt"))
+async def get_imgqt(bot, message):
     if len(message.command) != 2:
         k = await message.reply_text("**Processing...⏳**", quote=True)
         await asyncio.sleep(2)
