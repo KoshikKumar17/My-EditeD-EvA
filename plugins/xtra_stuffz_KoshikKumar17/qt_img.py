@@ -3,7 +3,6 @@ import os
 import requests
 import pyrogram
 import json
-import urllib.parse
 # first install pip install bing-image-urls
 from bing_image_urls import bing_image_urls
 from info import LOG_CHANNEL
@@ -27,11 +26,10 @@ async def get_imgqt(bot, message):
         athr = result['author']
         tgs = result['tags']
         gett_qt = f"""**“{qt}”**\n                        ~ {athr}\n\n**Category**:- {tgs}"""
-        shell = bing_image_urls(f'{qt}', limit=1)
-        subshell = urllib.parse.urlparse(shell)
-        orbital = url.geturl(subshell)
+        apple = bing_image_urls(f'{qt}', limit=1)
+        ball = apple[0]
         await message.reply_photo(
-            photo=orbital,
+            photo=ball,
             caption=gett_qt,
             disable_web_page_preview=True
         )
@@ -45,11 +43,10 @@ async def get_imgqt(bot, message):
         athr = result['author']
         tgs = result['tags']
         gett_qt = f"""**“{qt}”**\n                      ~ {athr}\n\n**Category**:- {tgs}"""
-        shell = bing_image_urls(f'{qt}', limit=1)
-        subshell = urllib.parse.urlparse(shell)
-        orbital = url.geturl(subshell)
+        apple = bing_image_urls(f'{qt}', limit=1)
+        ball = apple[0]
         await message.reply_photo(
-            photo=orbital,
+            photo=ball,
             caption=gett_qt,
             disable_web_page_preview=True
         )
