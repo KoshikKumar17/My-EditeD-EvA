@@ -44,13 +44,4 @@ async def spotifydl(bot, message):
         audio=API,
         caption=caption1,
         quote=True)
-        
-        
-    
-    
-    
-    
-
-
-
-  
+#Thanks
