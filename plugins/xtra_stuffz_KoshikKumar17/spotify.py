@@ -29,6 +29,8 @@ async def spotifydl(bot, message):
     caption = f"""**{track_name}**\n\n__{artists}__"""
     await k.delete()
     z = await message.reply_photo(photo=image, caption=caption, quote=True)
+    API2 = f"https://api.fabdl.com/spotify/mp3-convert-task/{gid}/{id}"
+    
     
     
 
