@@ -27,14 +27,25 @@ async def spotifydl(bot, message):
     preimage = result1["result"]["image"]
     image = preimage.replace("\\", "")
     caption = f"""**{track_name}**\n\n__{artists}__"""
+    caption1 = f"""**Title:** {track_name}\n\n**Artists:** {artists}"""
     await k.delete()
-    z = await message.reply_photo(photo=image, caption=caption, quote=True)
+    z = await message.reply_photo(
+        photo=image,
+        caption=caption,
+        quote=True
+    )
     API2 = f"https://api.fabdl.com/spotify/mp3-convert-task/{gid}/{id}"
     request1 = requests.get(API2)
     result2 = request1.json()
-    status = result2["result"]["status"]
     predlurl = result1["result"]["download_url"]
     dlurl = predlurl.replace("\\", "")
+    API = f"https://api.fabdl.com{dlurl}"
+    await message.reply_audio(
+        audio=API,
+        caption=caption1,
+        quote=True)
+        
+        
     
     
     
