@@ -21,6 +21,10 @@ async def spotifydl(bot, message):
     request = requests.get(API1)
     result1 = request.json()
     track_name = result1["result"]["name"]
+    id = result1["result"]["id"]
+    gid = result1["result"]["gid"]
+    artists = result1["result"]["artist"]
+    preimage = result1["result"]["image"]
     
     
 
