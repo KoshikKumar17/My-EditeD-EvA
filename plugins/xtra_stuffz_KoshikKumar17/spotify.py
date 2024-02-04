@@ -26,6 +26,10 @@ async def spotifydl(bot, message):
     artists = result1["result"]["artists"]
     preimage = result1["result"]["image"]
     image = preimage.replace("\\", "")
+    caption = f"""**{track_name}**\n\n__{artists}__"""
+    await k.delete()
+    z = await message.reply_photo(photo=image, caption=caption, quote=True)
+    
     
 
 
