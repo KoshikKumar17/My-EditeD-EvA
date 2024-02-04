@@ -23,9 +23,9 @@ async def spotifydl(bot, message):
     track_name = result1["result"]["name"]
     id = result1["result"]["id"]
     gid = result1["result"]["gid"]
-    artists = result1["result"]["artist"]
+    artists = result1["result"]["artists"]
     preimage = result1["result"]["image"]
-    
+    image = preimage.replace("\\", "")
     
 
 
