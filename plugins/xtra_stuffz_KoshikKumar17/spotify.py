@@ -13,6 +13,9 @@ async def spotifydl(bot, message):
         return await message.reply_text("**Reply to some Spotify link.**", quote=True)
     if not message.reply_to_message.text:
         return await message.reply_text("**Reply to some Spotify link.**", quote=True)
+    if ("album" in message.reply_to_message.text) or ("playlist" in message.reply_to_message.text):
+        return await message.reply_text("**Album or Playlist links not supported.**", quote=True)
+    
 
 
 
