@@ -20,6 +20,7 @@ async def spotifydl(bot, message):
     API1 = f"https://api.fabdl.com/spotify/get?url={url}"
     request = requests.get(API1)
     result1 = request.json()
+    track_name = result1["result"]["track"]
     
     
 
