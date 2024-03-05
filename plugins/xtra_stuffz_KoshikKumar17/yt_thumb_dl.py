@@ -12,7 +12,7 @@ async def send_thumbnail(bot, message):
         link = message.text.split(None, 1)[1]
         thumbnail = ytthumb.thumbnail(
             video=link,
-            quality=maxres
+            quality="maxres"
         )
         await message.reply_photo(
             photo=thumbnail,
@@ -22,7 +22,7 @@ async def send_thumbnail(bot, message):
         link = message.reply_to_message
         thumbnail = ytthumb.thumbnail(
             video=link,
-            quality=maxres
+            quality="maxres"
         )
         await message.reply_photo(
             photo=thumbnail,
